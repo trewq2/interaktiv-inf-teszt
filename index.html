@@ -6,9 +6,11 @@
   <meta name="theme-color" content="#0b1a36" />
   <meta name="description" content="Informatikai rendszer- és alkalmazás-üzemeltető technikus – interaktív vizsgafelkészítő, 2022–2026" />
   <title>INF vizsgafelkészítő · Interaktív tesztek</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="data.js" defer></script>
-  <script src="app.js" defer></script>
+  <style>
+:root{--bg:#f5f7fc;--ink:#152443;--muted:#63718b;--nav:#091a36;--blue:#4463eb;--blue2:#253dc4;--border:#e1e6ef;--green:#098465;--red:#bc3e50;--amber:#bf740b;--white:#fff;--radius:18px;--shadow:0 12px 34px #1529500c;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);color-scheme:light}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);line-height:1.58}button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.48;cursor:not-allowed}.container{width:min(1120px,calc(100% - 38px));margin:auto}.topbar{background:var(--nav);color:white}.topbar-inner{max-width:1120px;margin:auto;padding:17px 19px;display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{text-decoration:none;color:white;display:flex;align-items:center;gap:13px;font-size:19px;font-weight:850;letter-spacing:-.5px;line-height:1.2}.brand small{display:block;color:#b3c2df;font-size:10px;font-weight:500;letter-spacing:1.2px;text-transform:uppercase;margin-top:5px}.brand-soft{color:#849bff}.brand-icon{font-size:17px;display:grid;place-items:center;border:1px solid #5c6c9b;background:#1c3155;border-radius:11px;width:46px;height:46px}.topbar-meta{color:#bdcbe3;font-size:12px;display:flex;gap:9px;align-items:center;text-align:right}.status-dot{width:8px;height:8px;flex:none;background:#45d2a0;border-radius:100%;box-shadow:0 0 0 4px #45d2a01a}.foot{padding:35px 0 28px;display:flex;justify-content:space-between;gap:20px;color:#8d9bb0;font-size:12px}.hero{display:grid;grid-template-columns:1.55fr 1fr;gap:35px;padding:58px 0 35px;align-items:center}.eyebrow{color:#4d64cc;font-weight:750;font-size:12px;letter-spacing:1.45px;text-transform:uppercase}.hero h1{font-size:clamp(30px,4.2vw,51px);font-weight:850;line-height:1.13;letter-spacing:-2.1px;margin:12px 0 18px}.hero h1 em{font-style:normal;color:#4b61dd}.hero p{color:var(--muted);max-width:620px;font-size:16px}.hero-art{padding:29px;border-radius:25px;background:linear-gradient(135deg,#11234a,#2b4290);color:#fff;box-shadow:0 22px 42px #253d8033}.terminal{font:12px/1.9 ui-monospace,"Cascadia Code",monospace;background:#0b1730b8;padding:22px;border-radius:13px;color:#bdd1ff}.terminal .purple{color:#d1a4ff}.terminal .green{color:#7ce0ba}.statstrip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{padding:20px;background:white;border:1px solid var(--border);border-radius:15px;box-shadow:var(--shadow)}.stat strong{font-size:25px;display:block;line-height:1.2;letter-spacing:-.5px}.stat small{font-size:12px;color:var(--muted)}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:43px 0 17px}.section-heading h2{font-size:25px;letter-spacing:-.6px;margin:0}.section-heading p{color:var(--muted);margin:4px 0 0;font-size:14px}.filters{display:flex;gap:7px;flex-wrap:wrap}.filter{background:white;color:var(--muted);border:1px solid var(--border);border-radius:40px;padding:7px 14px;font-weight:700;font-size:12px}.filter.active{background:#dfe6ff;color:#324dc5;border-color:#aebeff}.exam-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.exam-card{padding:23px;background:white;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);display:flex;flex-direction:column;min-height:230px;transition:transform .2s,box-shadow .2s}.exam-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px #15295018}.exam-top{display:flex;justify-content:space-between;align-items:center;gap:8px}.season{font-size:11px;font-weight:750;padding:5px 11px;border-radius:20px;background:#eaf6f0;color:#15816b}.season.autumn{background:#fff1e0;color:#a96c1c}.exam-date{font-size:12px;color:#8d99a9}.exam-card h3{font-size:27px;margin:15px 0 0;letter-spacing:-.7px}.exam-card p{color:var(--muted);font-size:13px;margin:5px 0 22px}.exam-bottom{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px}.exam-info{color:#718099;font-size:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:10px;padding:12px 19px;font-weight:750;font-size:14px;text-decoration:none;white-space:nowrap;transition:background .17s,transform .17s}.btn:hover:not(:disabled){transform:translateY(-1px)}.btn-primary{background:var(--blue);color:white}.btn-primary:hover:not(:disabled){background:var(--blue2)}.btn-ghost{background:#edf1fa;color:#31446c}.btn-outline{background:white;border:1px solid #ccd5e5;color:#2b3d60}.btn-danger{background:#fff0f2;color:#9e2e47}.btn-sm{padding:9px 13px;font-size:12px}.section-note{margin:24px 0;border:1px solid #d7e0f5;background:#eef3ff;padding:15px 20px;border-radius:12px;color:#52678d;font-size:13px}.setup-wrap{max-width:735px;margin:42px auto}.back{border:0;background:transparent;color:#506589;font-weight:700;padding:3px 0 20px}.panel{background:#fff;border-radius:var(--radius);border:1px solid var(--border);padding:35px;box-shadow:var(--shadow)}.panel h1{font-size:29px;letter-spacing:-.8px;margin:8px 0}.setup-lead{color:var(--muted);margin:0 0 25px}.field-label{font-size:13px;font-weight:750;display:block;margin:12px 0 6px}.field{padding:13px 14px;border:1px solid #cbd4e4;border-radius:9px;width:100%;background:white;color:var(--ink);outline-color:var(--blue)}.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;margin:23px 0}.step{background:#f7f9fd;padding:13px;border-radius:10px;font-size:13px;color:#566780}.step strong{display:block;color:var(--ink)}.alert{background:#fff8e8;color:#86622b;border:1px solid #f0debb;padding:13px 16px;border-radius:12px;font-size:13px;margin:16px 0}.subtle{font-size:12px;color:var(--muted)}.exam-shell{max-width:870px;margin:30px auto}.exam-toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:15px}.toolbar-title{font-weight:800}.toolbar-sub{font-size:12px;color:var(--muted)}.clock{font-size:21px;font-variant-numeric:tabular-nums;color:#283d6b;font-weight:850;background:#fff;border:1px solid var(--border);border-radius:12px;padding:8px 15px;min-width:100px;text-align:center}.clock.danger{color:var(--red);border-color:#f5b8c0;background:#fff6f7}.progress{height:8px;background:#e1e7f2;border-radius:100px;overflow:hidden;margin:13px 0 25px}.progress>span{display:block;height:100%;background:linear-gradient(90deg,#5976ff,#35b6cb);border-radius:inherit;transition:width .22s}.question-card{padding:32px;background:white;border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow)}.q-caption{display:flex;justify-content:space-between;align-items:center;color:#607295;font-size:12px;font-weight:700;margin-bottom:16px}.q-caption .phase{border-radius:20px;padding:5px 10px;background:#f0f3fa}.question-title{font-size:clamp(18px,2.6vw,22px);font-weight:720;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere;margin:0 0 18px}.question-img{max-width:100%;max-height:310px;object-fit:contain;border:1px solid var(--border);border-radius:12px;margin:0 0 12px}.choice-help{color:#7b8ba2;font-size:12px;margin:0 0 16px}.options{display:grid;gap:11px}.option{border:1.5px solid #dbe3ef;background:#fbfcff;border-radius:12px;padding:14px 16px;display:flex;gap:15px;align-items:flex-start;cursor:pointer;min-height:57px;transition:border-color .15s,background .15s}.option:hover{border-color:#9fb1ee;background:#f8faff}.option.selected{border-color:#526ae4;background:#f0f3ff}.option input{width:17px;height:17px;accent-color:#445ce4;flex:none;margin-top:4px}.opttext{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}.q-actions{display:flex;justify-content:space-between;align-items:center;margin-top:22px;gap:15px}.q-actions-right{display:flex;gap:10px}.exam-small{font-size:12px;color:#8795ab;margin:15px 5px}.matching-grid{display:grid;gap:11px}.match-row{border:1px solid var(--border);border-radius:11px;padding:14px;display:grid;grid-template-columns:1fr 1.5fr;gap:10px;align-items:center}.match-row strong{font-size:14px}.match-row select,.order-row select{width:100%;padding:10px;border:1px solid #ccd5e5;border-radius:9px;color:var(--ink);background:white}.order-row{display:grid;grid-template-columns:70px 1fr;gap:13px;align-items:center;padding:12px;border-bottom:1px solid var(--border)}.textfields{display:grid;gap:12px}.results-wrap{margin:34px auto;max-width:960px}.result-hero{background:linear-gradient(115deg,#112650,#213f85);border-radius:22px;padding:34px;color:#fff}.result-overline{color:#a8c6ff;font-size:12px;font-weight:750;text-transform:uppercase;letter-spacing:1px}.result-hero h1{font-size:31px;letter-spacing:-1px;margin:7px 0 15px}.result-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.metric{background:#ffffff12;border:1px solid #ffffff17;padding:15px;border-radius:12px}.metric b{font-size:26px;display:block}.metric span{font-size:12px;color:#c3d4ef}.pass-pill{display:inline-block;background:#d9f7e8;color:#08704f;border-radius:50px;padding:5px 11px;font-size:12px;font-weight:800}.fail-pill{background:#ffe1e5;color:#9c344a}.result-actions{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0}.review-title{font-size:22px;margin:29px 0 13px}.review-list{display:grid;gap:12px}.review{background:white;border:1px solid var(--border);border-left:4px solid #9daabf;border-radius:13px;padding:19px}.review.good{border-left-color:#17a67b}.review.bad{border-left-color:#db6170}.review.partial{border-left-color:#e4a742}.item{padding:8px 0;border-bottom:1px solid #e6e9ee;break-inside:avoid}.review h3{margin:0 0 9px;font-size:15px;white-space:pre-wrap}.review-head{display:flex;justify-content:space-between;gap:12px;color:#5e6d86;font-size:12px;font-weight:750;margin-bottom:9px}.review-answer{font-size:13px;margin:5px 0;white-space:pre-wrap}.review-answer b{color:#30405e}.review-note{font-size:12px;color:#7d6130;background:#fff8e8;padding:8px 10px;border-radius:7px;margin-top:9px}.toasts{position:fixed;z-index:40;bottom:20px;right:20px;display:grid;gap:9px}.toast{padding:12px 18px;max-width:340px;border-radius:10px;background:#182e56;color:#fff;font-size:13px;box-shadow:0 12px 32px #091a3655}.report-template{display:none}.muted{color:var(--muted)}@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:35px}.hero-art{display:none}.exam-grid{grid-template-columns:repeat(2,1fr)}.result-metrics{grid-template-columns:repeat(2,1fr)}.topbar-meta{display:none}}@media(max-width:550px){.container{width:calc(100% - 24px)}.hero h1{font-size:32px;letter-spacing:-1px}.statstrip{grid-template-columns:repeat(2,1fr)}.exam-grid{grid-template-columns:1fr}.section-heading{display:block}.filters{margin-top:13px}.panel,.question-card{padding:19px}.steps{grid-template-columns:1fr}.q-actions{display:flex;flex-direction:column-reverse;align-items:stretch}.q-actions-right{display:flex;justify-content:space-between}.q-actions-right .btn{flex:1}.foot{flex-direction:column;gap:4px}.match-row{grid-template-columns:1fr}.result-metrics{grid-template-columns:repeat(2,1fr)}.result-hero{padding:23px}.result-hero h1{font-size:24px}}@media print{.topbar,.foot,.result-actions,.back,.filters{display:none!important}body{background:white}.review,.result-hero{break-inside:avoid}.result-hero{-webkit-print-color-adjust:exact;print-color-adjust:exact} .results-wrap{margin:0;max-width:100%}}
+
+  </style>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" async></script>
 </head>
 <body>
@@ -19,9 +21,2524 @@
         <div class="topbar-meta"><span class="status-dot"></span> Informatikai rendszer- és alkalmazás-üzemeltető technikus</div>
       </div>
     </header>
-    <main id="screen" class="container"></main>
+    <main id="screen" class="container"><section class="panel" style="margin-top:40px"><h1>Betöltés…</h1><p>Ha a tesztek nem jelennek meg, engedélyezd a JavaScript futtatását a böngészőben.</p></section></main>
     <footer class="foot container"><span>Vizsgafelkészítő · 2022–2026</span><span>A gyakorlás helyben történik, az eredményeket az oldal nem küldi szerverre.</span></footer>
   </div>
   <div class="toasts" id="toast" role="status" aria-live="polite"></div>
+  <script>
+  // Ha a böngészőben váratlan futási hiba történik, látható üzenet jelenik meg.
+  window.addEventListener('error', function(ev){
+    const main=document.getElementById('screen');
+    if(main && (!main.querySelector('.exam-card') && !main.querySelector('.question-card') && !main.querySelector('.panel:not(.initial-panel)'))){
+      main.innerHTML='<section class="panel" style="margin-top:40px"><h1>Betöltési hiba</h1><p>Frissítsd az oldalt a Ctrl+F5 billentyűkkel. Ha a probléma marad, ellenőrizd, hogy a teljes, új index.html fájl került-e fel a GitHubra.</p><p style="color:#9d4251">'+String(ev.message||'Ismeretlen hiba').replace(/[&<>"']/g,'')+'</p></section>';
+    }
+  });
+  </script>
+  <script>
+window.EXAMS = [
+  {
+    "id": "2022-tavasz",
+    "year": 2022,
+    "season": "Tavaszi",
+    "date": "2022-05-17",
+    "title": "2022 tavaszi teszt",
+    "minutes": 45,
+    "questions": [
+      {
+        "id": "2022-tavasz-1",
+        "number": 1,
+        "question": "Egy fejlesztő dev40 nevű új ágat hoz létre az aktuális branch alapján, kódot módosít, commitol, majd feltölti a változtatásokat a központi repositoryba. Melyik parancssorozat megfelelő?",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "git create branch dev40\ngit switch dev40\ngit add .\ngit commit\ngit pull",
+          "git checkout dev40\ngit switch dev40\ngit add .\ngit commit --title \"dev40 phase1\"\ngit upload",
+          "git checkout -b dev40\ngit add --all\ngit commit -m \"dev40 phase1\"\ngit push --set-upstream origin dev40",
+          "git create -b dev40\ngit branch checkout dev40\ngit add --all\ngit commit -m \"dev40 phase1\"\ngit push -s -u dev40",
+          "git checkout -b --local dev40\ngit add --all\ngit commit -m \"dev40 phase1\"\ngit checkout -b --remote dev40\ngit push"
+        ],
+        "correct": [
+          2
+        ]
+      },
+      {
+        "id": "2022-tavasz-2",
+        "number": 2,
+        "question": "Melyek a helyes állítások az e-mailben történő kommunikációról? Két választ jelöljön!",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "Hivatalos e-mailek fejlécében kötelező az ügyfél postai levelezési címét feltüntetni.",
+          "Ha egymást nem ismerő címzetteknek küldünk csoportos e-mailt, a címeket a Bcc (titkos másolat) mezőbe helyezzük.",
+          "Ügyfeleknek küldött hírlevélben leiratkozási hivatkozást kell elhelyezni.",
+          "Nagy fájl esetén kötelező a LA (Large Attachment) mezőt választani.",
+          "Irodán kívül biztonsági okból privát levelezőből kell küldeni a céges leveleket."
+        ],
+        "correct": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "2022-tavasz-3",
+        "number": 3,
+        "question": "Egy hálózati eszköz frissítése utáni hibára keresve túl sok irreleváns Google-találatot kap. A keresőkifejezés változtatása nélkül hogyan szűkítheti az eredményeket? Két választ jelöljön!",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "Az Eszközök beállításainál a hibaüzenet szó szerinti keresését használja.",
+          "Csak magyar nyelvű oldalakat kér.",
+          "Csak videós találatokat kér.",
+          "Külön hálózatinformatika témakört választ.",
+          "Az Eszközöknél az elmúlt héten frissített oldalakra szűr."
+        ],
+        "correct": [
+          0,
+          4
+        ],
+        "note": "A Google keresőfelülete az eredeti 2022-es vizsgához képest változhatott; az eredeti javítókulcs szerinti gyakorlat."
+      },
+      {
+        "id": "2022-tavasz-4",
+        "number": 4,
+        "question": "Az adatbázisban a Termekek(ID, Nev, NettoAr, AFAKulcs, KategoriaID) és Kategoriak(ID, Nev) táblák vannak. Melyik SQL-lekérdezés listázza az „Ital” kategóriába tartozó termékek nevét és nettó árát?",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "SELECT Termekek.Nev, Termekek.NettoAr\nFROM Kategoriak, Termekek\nWHERE Kategoriak.ID = Termekek.KategoriaID AND Kategoriak.Nev=\"Ital\";",
+          "SELECT Nev, NettoAr FROM Kategoriak, Termekek WHERE Kategoriak.Nev=\"Ital\";",
+          "SELECT Termek.Nev, NettoAr FROM Termekek WHERE Kategoria.ID=Termekek.KategoriaID AND Kategoriak.Nev=\"Ital\";",
+          "SELECT Termek.Nev, NettoAr FROM Termekek INNER JOIN Kategoriak ON Termekek.ID=Kategoriak.ID WHERE Kategoriak.Nev=\"Ital\";"
+        ],
+        "correct": [
+          0
+        ]
+      },
+      {
+        "id": "2022-tavasz-5",
+        "number": 5,
+        "question": "Melyik állítás NEM igaz a REST API technológiára?",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "A REST API technológia a REST protokollt használó hálózati hibakeresési eljárás.",
+          "Kliens és szerver közötti kommunikáció megvalósítására használható.",
+          "Egy erőforrás kérése történhet GET metódussal.",
+          "Sikeres végrehajtásról HTTP 200-as kóddal is tájékoztatható a kliens."
+        ],
+        "correct": [
+          0
+        ]
+      },
+      {
+        "id": "2022-tavasz-6",
+        "number": 6,
+        "question": "Egy céges mobiltelefon tárterülete betelt, ezért új alkalmazás nem telepíthető. Melyik két megoldás segít?",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "A RAM és ROM memóriák egyszerű cseréje nagyobb méretűre.",
+          "Nem használt alkalmazások eltávolítása.",
+          "Futó alkalmazások bezárása, a RAM felszabadítása.",
+          "Fényképek és videók egy részének törlése."
+        ],
+        "correct": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "2022-tavasz-7",
+        "number": 7,
+        "question": "Melyik biztonsági mentésről szól a leírás? Teljes mentés után csak az előző mentés óta változott adatokat mentik; helyreállításkor a teljes és az azt követő valamennyi változásmentést fel kell dolgozni.",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "Strukturálatlan",
+          "Rendszerképképzés",
+          "Inkrementális",
+          "Dekrementális",
+          "Integráns",
+          "Differenciális"
+        ],
+        "correct": [
+          2
+        ]
+      },
+      {
+        "id": "2022-tavasz-8",
+        "number": 8,
+        "question": "Írja fel a lehető legtömörebb formátumban a következő IPv6-címet: 2001:0db8:0000:f000:1ed0:0000:0000:00af",
+        "points": 2,
+        "type": "textmulti",
+        "answers": [
+          "2001:db8:0:f000:1ed0::af"
+        ]
+      },
+      {
+        "id": "2022-tavasz-9",
+        "number": 9,
+        "question": "Cisco 2960 switch Telnet-konfiguráció: management VLAN 1 címe 192.168.1.10/24, a routeren keresztül csatlakozó PC címe 192.168.2.100/24, a line vty 0 15 alatt „password cisco1” beállítás van. A kapcsolat nem működik. Melyik két ok lehetséges?",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "Hiányzik a login parancs a VTY-vonal konfigurációjából.",
+          "A felügyeleti interfész eltérő IP-alhálózatban van, mint a PC.",
+          "Hiányzik az alapértelmezett átjáró beállítása a switchen.",
+          "Túl rövid a Telnet-jelszó."
+        ],
+        "correct": [
+          0,
+          2
+        ],
+        "note": "A 2022-es hivatalos javítókulcs szerint a login és az alapértelmezett átjáró beállítása is hiányzik. A switch és a PC eltérő IP-hálózatban van, de közöttük router látható."
+      },
+      {
+        "id": "2022-tavasz-10",
+        "number": 10,
+        "question": "Tegye sorrendbe az STP konvergálásának lépéseit!",
+        "points": 2,
+        "type": "order",
+        "items": [
+          "Szegmensenként egy kijelölt switch kiválasztása",
+          "Gyökérponti híd kiválasztása",
+          "A nem kijelölt, illetve gyökérportok lezárása",
+          "Gyökérportok kiválasztása a nem gyökérponti switcheken"
+        ],
+        "order": [
+          1,
+          3,
+          0,
+          2
+        ]
+      },
+      {
+        "id": "2022-tavasz-11",
+        "number": 11,
+        "question": "Cisco switchen korábban létrehozták a 10-es és 11-es VLAN-t. Az erase startup-config és újraindítás után létrehozzák a 100-as és 200-as VLAN-t. Mit mutat a show vlan brief?",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "Csak a két új VLAN-t.",
+          "Mind a négy létrehozott VLAN-t és az alapértelmezett VLAN-okat.",
+          "Csak az alapértelmezett VLAN-okat.",
+          "Csak a 100-as és 200-as VLAN-t, valamint az alapértelmezetteket."
+        ],
+        "correct": [
+          1
+        ]
+      },
+      {
+        "id": "2022-tavasz-12",
+        "number": 12,
+        "question": "Melyik fogalom NEM társítható a HSRP protokollhoz?",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "Virtuális MAC-cím",
+          "Virtuális IP-cím",
+          "Hídprioritás",
+          "Hello időzítő"
+        ],
+        "correct": [
+          2
+        ]
+      },
+      {
+        "id": "2022-tavasz-13",
+        "number": 13,
+        "question": "Melyik WLAN-technológia alkalmazható a sávszélesség növelésére?",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "ISM",
+          "MIMO",
+          "EAP",
+          "WDS"
+        ],
+        "correct": [
+          1
+        ]
+      },
+      {
+        "id": "2022-tavasz-14",
+        "number": 14,
+        "question": "Mi a hasonlóság a Telnet és az SSH távoli elérésre történő konfigurálásában Cisco routeren?",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "Mindkettőnél kötelező a login parancs a vonali konfigurációban.",
+          "Mindkettőhöz kötelező a teljes domainnév.",
+          "Mindkettőhöz virtuális terminálon kell engedélyezni a bejövő kapcsolatot.",
+          "Mindkettőhöz titkosító kulcsot kell létrehozni."
+        ],
+        "correct": [
+          2
+        ]
+      },
+      {
+        "id": "2022-tavasz-15",
+        "number": 15,
+        "question": "Privát IP-című webszervernek csak a HTTPS és SSH szolgáltatását szeretnénk az internetről elérhetővé tenni. Melyik technológia megfelelő?",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "Statikus NAT",
+          "Porttovábbítás",
+          "PAT",
+          "Dinamikus NAT"
+        ],
+        "correct": [
+          1
+        ]
+      },
+      {
+        "id": "2022-tavasz-16",
+        "number": 16,
+        "question": "Melyik hitelesítési eljárás WAN-kapcsolatoknál jellemző, három lépésből áll, és nemcsak a kapcsolat felépítésekor hitelesít?",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "PAP",
+          "EAP",
+          "CHAP",
+          "WEP"
+        ],
+        "correct": [
+          2
+        ]
+      },
+      {
+        "id": "2022-tavasz-17",
+        "number": 17,
+        "question": "Melyek a kettes típusú, gazda operációs rendszerben futó hypervisorok? Két választ jelöljön!",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "VMware ESXi",
+          "VMware Workstation",
+          "Oracle VM",
+          "Oracle VM VirtualBox",
+          "Microsoft Hyper-V",
+          "KVM"
+        ],
+        "correct": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "2022-tavasz-18",
+        "number": 18,
+        "question": "Windows Server megosztásnál a Marketing csoportnak az NTFS-jogosultsága csak Read / List / Read & execute, míg a megosztásban az Everyone Change jogú. A csoport tagja nem tud fájlt létrehozni. Mi segít?",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "Gipsz Jakabnak csak a Write attributes és Write extended attributes jogosultságok beállítása.",
+          "A Security lapon a Marketing csoport Modify NTFS-jogosultságának engedélyezése.",
+          "A megosztásban a Marketingnek a Change jog megadása (NTFS-változtatás nélkül).",
+          "Everyone jogainak törlése és Marketing Read megosztási engedély létrehozása."
+        ],
+        "correct": [
+          1
+        ],
+        "note": "Az eredeti PDF 8. oldalának jogosultságbeállítási ábrájából átírva."
+      },
+      {
+        "id": "2022-tavasz-19",
+        "number": 19,
+        "question": "Melyik SNMP-üzenetet küldi a felügyelt eszköz, ha az egyik interfésze hiba miatt leáll?",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "Critical",
+          "Trap",
+          "Notification",
+          "Warning"
+        ],
+        "correct": [
+          1
+        ]
+      },
+      {
+        "id": "2022-tavasz-20",
+        "number": 20,
+        "question": "A „collapsed core” hálózati modellben mely rétegeket vonjuk össze?",
+        "points": 2,
+        "type": "choice",
+        "options": [
+          "Központi és hozzáférési",
+          "Központi és hálózati",
+          "Központi és elosztási",
+          "Központi és hálózatelérési"
+        ],
+        "correct": [
+          2
+        ]
+      }
+    ],
+    "source": "Szkennelt hivatalos javító-értékelő PDF; az eredeti kérdések tartalmából digitalizálva."
+  },
+  {
+    "id": "2023-tavasz",
+    "year": 2023,
+    "season": "Tavaszi",
+    "date": "2023-05-24",
+    "title": "2023 tavaszi teszt",
+    "minutes": 45,
+    "questions": [
+      {
+        "id": "2023-tavasz-1",
+        "number": 1,
+        "question": "Jelölje meg az alábbiak közül melyik állítás NEM HELYES!",
+        "options": [
+          "A git checkout -b fix/homepage-styling parancs létrehoz egy új branch-et fix/homepage néven az aktuális branch alapján, és egyúttal át is vált az új branch-re.",
+          "Ha ad: \\dev\\react-course\\react-starting mappában egy Git repository van, és ebben a mappában kiadjuk a git clone . . . \\react-starting-2 parancsot, akkor a d: \\dev\\react-course\\react-starting-2 mappában létrejön egy másolata a meglévő repositorynak.",
+          "A helyi módosításokat a git push paranccsal tölthetjük fel a központi repoba.",
+          "A Git verziókezelő használatához mindenképpen szükség van a GitHub-ra vagy egy másik hasonló internetes szolgáltatásra."
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "Az eredeti kérdés hibás: a GitHub-kötelezettségről szóló állítás is hamis. Mindkét megoldást elfogadjuk.",
+        "acceptedSingles": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": "2023-tavasz-2",
+        "number": 2,
+        "question": "A felsorolt állítások egy vállalaton belüli e-mail kommunikációra vonatkoznak.",
+        "options": [
+          "Az üzemeltető csapaton belüli kommunikációban az összes üzenetet a csapatvezetőnek kell küldeni, aki eldönti, hogy kinek továbbítja az üzenetet.",
+          "Az egyes munkacsoportok számára a kommunikációt megkönnyítő csoportos címeket vagy levelezőlistákat célszerű létrehozni, amire küldött üzeneteket csak az adott csoport tagjai kapnak meg.",
+          "A vállalati kommunikációban minden küldött e-mail üzenet végére érdemes elhelyezni a figyelmeztetést, hogy az e-mailt ne nyomtassa ki a fogadó fél.",
+          "A titkárság által az összes munkatársnak szóló email üzenetben a munkatársak e-mali címét a CC (Carbon Copy) mezőben kell elhelyezni."
+        ],
+        "correct": [
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-3",
+        "number": 3,
+        "question": "A Google keresőjében az alábbi állítások közül melyik felel meg a jelenlegi pontos keresési szabályoknak?",
+        "options": [
+          "Ha a keresőkifejezésben szerepel a prot:https, akkor csak a https protokollt használó, tanúsítvánnyal rendelkező webhelyek találatai jelennek meg a találati listában.",
+          "Ha egy keresőkifejezésben szerepel a site: devprofessional. io, akkor csak olyan találatok jelennek meg, amelyen hiperhivatkozás található a devprofessional.io oldalra.",
+          "A plusz (+) operátor segítségével olyan túlzottan gyakori szót (pl. ,,vagy\") is bevonhatunk a keresésbe, amit normál módon a kereső figyelmen kívül hagyna.",
+          "Ha azt szeretnénk, hogy a találati listában csak olyan oldalak jelenjenek meg, amiben pontosan szerepel egy kifejezés, akkor ezt a kifejezést idézőjelek között kell megadni a keresésben."
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "A forrás két helyes választ jelöl, de a Google + operátora ma már nem támogatott. Pontozás: idézőjeles pontos keresés."
+      },
+      {
+        "id": "2023-tavasz-4",
+        "number": 4,
+        "question": "A mellékelt állítások a mesterséges intelligenciáról (Ml) szólnak. Válassza ki az igaz állítást!",
+        "options": [
+          "A mesterséges intelligencia (Ml) a gépek emberhez hasonló képességeit jelenti, mint például az érvelés, a tanulás, a tervezés és a kreativitás.",
+          "A virtuális asszisztensek egyelőre nem használják a mesterséges intelligenciát (Ml), mert ha használnák, akkor a válaszaik kiszámíthatatlanok, nagyon sok esetben hibásak lennének.",
+          "Az orvostudomány talán az egyetlen terület, ahol a mesterséges Intelligenciának nincs létjogosultsága, mert a betegségek felismerésében, diagnosztizálásában a gépek nem tudnak segíteni.",
+          "A mesterséges intelligencia (Ml) informatikai eszközökkel utánozza le az emberi agyban lejátszódó kémiai folyamatokat, ezáltal a gondolkozást, az emberi intelligenciát."
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-5",
+        "number": 5,
+        "question": "Az ábrán egy adatbázis táblái és azok kapcsolatai láthatóak.\nA felsorolt SQL utasítások közül melyik határozza meg azokat a kategóriákat, amelyekben van olyan áru, amely drágább, mint 5000 Ft? Minden kategória csak egyszer szerepelhet az eredményben!\n(Jelölje meg a helyes választ)",
+        "options": [
+          "SELECT DISTINCT kategoriaNev\nFROM aru, kategoria\nWHERE (kategoriaID = kategoria.ID) AND\n(kategoria.ID in (SELECT kategoriaID\nFROM aru\nWHERE ar>5000));",
+          "SELECT DISTINCT kategoria.Nev\nFROM kategoria\nWHERE kategoriaID = kategoria.ID AND ar>5000;",
+          "SELECT kategoriaNev\nFROM aru, kategoria\nWHERE kategoriaID = kategoria.ID AND ar>5000;",
+          "SELECT DISTINCT kategoriaNev\nFROM aru, kategoria\nWHERE ar>5000;"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2,
+        "image": "data:image/png;base64,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",
+        "note": "Az SQL-ben az OCR/karakterfelismerési elírásokat javítottuk (0/O, ID). A feladat ábrája az eredeti dokumentumból származik."
+      },
+      {
+        "id": "2023-tavasz-6",
+        "number": 6,
+        "question": "A felsorolt állítások a Windows Update szolgáltatással kapcsolatosak. (Válassza ki az igaz állítást!)",
+        "options": [
+          "Vállalati környezetben szabályozható, hogy mely frissítések kerüljenek fel a munkaállomásokra, és melyek nem.",
+          "Vállalati környezetben a nagyobb üzembiztonság érdekében a Windows frissítések a megjelenés napján, vagy az ahhoz legközelebbi bekapcsoláskor automatikusan települnek.",
+          "A Windows Update a Windows for Students változatban nem konfigurálható, mindig automatikusan elvégzi a frissítéseket.",
+          "A Windows Update biztonsági okok miatt csak azokon a gépeken futtatható, ahol az összes partíció NTFS."
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-7",
+        "number": 7,
+        "question": "Az alkalmazásfejlesztő csapat új webalkalmazás-verziót készített. Melyik kiadási módszer felel meg a modern alkalmazásüzemeltetés elvárásainak?",
+        "options": [
+          "A fejlesztőcsapat a GitHub-ra commitolja a végső változatot. A GitHub automatikusan létrehozza az üzemeltetési konténert és új URL-en elérhetővé teszi.",
+          "Az üzemeltető csapat új konténert hoz létre, a kódot beimportálja, majd a konténert feltölti a webszerverre.",
+          "Az alkalmazásüzemeltető adathordozón átveszi a szoftvert és kézzel másolja fel a kiszolgálóra.",
+          "A fejlesztő csapat frissíti a központi Git repositoryt, amely a felügyelt CI/CD rendszerben automatikus ellenőrzést, buildet és webkiszolgáló-frissítést indít."
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "Az eredeti, két bekezdésre tördelt válasz szövegét összevontuk, a jelentés megőrzésével."
+      },
+      {
+        "id": "2023-tavasz-8",
+        "number": 8,
+        "question": "Mi annak hálózatnak a szórási címe, amin a 192.168.100.155/28 IP-cím található?",
+        "options": [
+          "192.168.100.255",
+          "192.168.100.156",
+          "192.168.100.191",
+          "192.168.100.159"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-9",
+        "number": 9,
+        "question": "Gateway of last resort is not sec\n10.0.0.0/24 is subnetted, 2 subnecs\nD 10.0.0.0 [90/2172416] via 172.17.1.1, 00:00:01, Serial0/0/0\nD 10.1.0.0 [90/2172416] via 172.17.1.1, 00:00:01, Serial0/0/0\n172.16.0.0/29 is subnetted, 1 subnets\nC 172.16.0.0 is directly connected, FastEthernet0/0\n172.17.0.0/30 is subnetted, 2 subnets\nC 172.17.1.0 is directly connecced, serial0/0/0\nC 172.17.1.4 is directly connecced, Serial0/0/1\n192.0.0.0/30 is subnetced, 1 subnecs\nD 192.0.0.0 [90/2172416] via 172.17.1.6, 00:00:01, Serial0/0/1\n211.1.1.0/30 is subnetted, subnets\n211.1.1.0 [90/2172416] via 172.17.1.6, 00:00:01, serial0/0/1\nAdott az itt látható irányítótábla.\nMelyik interfészen küldi ki a router a 172.17.1.2 célcímre tartó csomagot?\n(Jelölje meg a helyes választ!)",
+        "options": [
+          "Serial0/0/1",
+          "Fast Ethernet0/0",
+          "Nem tudja kézbesíteni, mivel nincs alapértelmezett útvonala.",
+          "Serial0/0/0"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-10",
+        "number": 10,
+        "question": "Egy PVST + protokollt futtató switch egyik portja 3 másodperccel ezelőtt váltott tanuló állapotba. Mennyi idő múlva várható, hogy felhasználói forgalmat tud majd továbbítani?",
+        "options": [
+          "12mp",
+          "Már most is tud továbbítani.",
+          "15mp",
+          "27mp"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-11",
+        "number": 11,
+        "question": "Melyik állítás igaz a normál VLAN-okra?",
+        "options": [
+          "A nevüknek és sorszámuknak minden swítch-en egyezni kell.",
+          "Minden esetben megjelennek az adataik a futó konfigurációban is.",
+          "Konfiguráláskor mindenképpen el kell neveznünk őket.",
+          "Öt közülük már eleve definiálva van egy Cisco switch-en."
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-12",
+        "number": 12,
+        "question": "Egy HSRP router kiesett az aktív szerepkörből egy áramszünet miatt, ami 2 percig tartott. Visszakapcsolás után sem lesz belőle újra aktív, csak tartalék. Mi lehet ennek a legfőbb oka?",
+        "options": [
+          "Ha 40 másodpercnél tovább nem küld hello-kat. a tartalék router véglegesen aktíwá válik.",
+          "Kisebb az IP-címe, mint a másik routernek.",
+          "Túl kicsi a prioritása, legalább 90.nek kell lennie.",
+          "Hiányzik róla a 'preempt' beállítás, nem tudja visszavenni az aktív szerepkört."
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-13",
+        "number": 13,
+        "question": "Melyik közeghozzáférés-vezérlési módszer jellemző a vezeték nélküli LAN-okra?",
+        "options": [
+          "CSMA/CD",
+          "Determinisztikus",
+          "CSMA/CA",
+          "Versengéses"
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-14",
+        "number": 14,
+        "question": "Egy rendszergazda észreveszi, hogy néhány munkaállomás más IP-címzési adatokat kapott induláskor, mint a többi. Mire gyanakodhat, és hogyan védekezzen ellene?",
+        "options": [
+          "DoS támadás történt (portbiztonság).",
+          "Cím-kiéheztetéses támadás történt(DHCP starvation).",
+          "Kalóz DHCP-szerver van a hálózaton (DHCP snooping).",
+          "IP cím hamisítás történt (ARP inspection)."
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-15",
+        "number": 15,
+        "question": "Egy EIGRP-t futtató routeren kiadjuk a show ip protocols parancsot, és többek között ezt látjuk: EIGRP metric weight K1=1, K2=0, K3=0, K4=0, KS=0 Mi állapítható meg a kimenetből?",
+        "options": [
+          "A sávszélességet nem vesszük figyelembe a költségszámításnál.",
+          "Az alapértelmezett K tényezőkkel működik a router.",
+          "A késleltetést nem vesszük figyelembe a költségszámításnál.",
+          "Sem a sávszélességet, sem a késleltetést nem vesszük figyelembe a költségszámításnál."
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-16",
+        "number": 16,
+        "question": "A felsoroltak közül melyik szolgáltatást NEM tudja nyújtani a PPP?",
+        "options": [
+          "Hitelesítés",
+          "Sávszélesség-szabályozás",
+          "Terheléselosztás",
+          "Tömörítés"
+        ],
+        "correct": [
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-17",
+        "number": 17,
+        "question": "A felsoroltak közül melyik állítás igaz a 2-es típusú hypervisorra?",
+        "options": [
+          "A Microsoft Hyper-V-nek a Windows 10/11 Pro alatt elérhető változata ezt a virtualizációs típust valósítja meg.",
+          "A host operációs rendszer késleltetéséből adódóan lassabb, mint az 1-es típusú.",
+          "Az 1-es típusú hypervisorhoz képest gyorsabb. mert ez már a második generációs virtualizációs technikákra épít.",
+          "Közvetlenül a hardveren fut."
+        ],
+        "correct": [
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-18",
+        "number": 18,
+        "question": "Egy Linux szerverre adatbázis-szervert kell telepítenie. A felsoroltak közül melyik NEM használható Linux alatt adatbázisszervernek? (Jelölje meg a helyes választ!)",
+        "options": [
+          "MariaDB",
+          "MySQL",
+          "PostgreSQL",
+          "UbunSQL"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-19",
+        "number": 19,
+        "question": "A felsoroltak közül melyik állítás NEM igaz a rendszernaplózásra?",
+        "options": [
+          "Az eszköz helyi pufferébe Is lehet küldeni a napló üzeneteket.",
+          "Távoli szerverre történő naplózásnál az alapértelmezett szállítási protokoll az UDP.",
+          "A legmagasabb fontossági szintű üzenetek számkódja a 0-ás.",
+          "A konzolra történő naplózás nem kapcsolható ki."
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-tavasz-20",
+        "number": 20,
+        "question": "A 3 rétegű tervezési modell melyik rétegéhez tartoznak a switch-ek és a vezeték nélküli AP-k?",
+        "options": [
+          "elosztási",
+          "adatkapcsolati",
+          "központi",
+          "hozzáférési"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "id": "2023-osz",
+    "year": 2023,
+    "season": "Őszi",
+    "date": "2023-11-10",
+    "title": "2023 őszi teszt",
+    "minutes": 45,
+    "questions": [
+      {
+        "id": "2023-osz-1",
+        "number": 1,
+        "question": "Jelölje meg az felsorolt szoftverek közül azt, amelyik NEM csoportmunkaeszköz!",
+        "options": [
+          "Microsoft Teams",
+          "Webex Teams",
+          "lpSec",
+          "GitHub"
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-2",
+        "number": 2,
+        "question": "Tegyük fel, hogy Ön hálózatüzemeltető technikusként dolgozik egy nagy nemzetközi telekommunikációs vállalatnál. A felsoroltak közül mely kommunikációs szabályok követése várható el Öntől? Egyéni betűtípusokat és beágyazott képeket tartalmazó HTML formátumú levelek küldése az ügyfeleknek.",
+        "options": [
+          "Kizárólag angol nyelvű üzenetek küldése még abban az esetben is, ha csak magyar anyanyelvű ügyfelekkel kommunikál.",
+          "A címzettek számára releváns tárgy megadása az emailekben.",
+          "A személyes adataink megosztása minden kommunikáció során.",
+          "Az e-mail üzenetek végén minden fontos publikus kapcsolattartási adatot tartalmazó aláírás használata."
+        ],
+        "correct": [
+          1,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-3",
+        "number": 3,
+        "question": "Melyek tartoznak a hatékony internetes keresés alapelvei közé? Csak az első oldalon található eredmények használata, mert a többi nem releváns.",
+        "options": [
+          "Különböző keresőmotorok használata, és csak az egyező válaszok figyelembevétele.",
+          "Az eredmények kritikus értékelése, különös tekintettel a forrás hitelességére.",
+          "Az első találat mindig a legjobb.",
+          "A keresőmotorok specifikus funkcióinak használata (pl. idézőjelek, mínuszjel stb.)."
+        ],
+        "correct": [
+          1,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-4",
+        "number": 4,
+        "question": "Melyik állítás igaz az loT (Internet of Things) technológiára?",
+        "options": [
+          "Az loT eszközök a begyűjtött adatok hatékony feldolgozása érdekében nagy teljesítményű és nagy energiaigényű hardvert tartalmaznak.",
+          "Az loT eszközök a IP protokoll speciális változatát, az IOTP-t használják az egymás közötti kommunikációra.",
+          "Az loT eszközök csak központi felhőszolgáltatáson keresztül tudnak kommunikálni.",
+          "Az loT technológia lehetővé teszi a különböző eszközök interneten vagy más kommunikációs hálózaton keresztül történő összekapcsolását és adatcseréjét."
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-5",
+        "number": 5,
+        "question": "Melyik állítás igaz a relációs adatbázisok tervezésére vonatkozóan?",
+        "options": [
+          "A tiszta szerkezetű adatbázisban a nem kulcs attribútumok teljesen függenek az elsődleges kulcstól.",
+          "A redundancia növeli az adatbázis teljesítményét és megbízhatóságát.",
+          "Az adatbázis tervezésekor törekedni kell a minél nagyobb redundancia kialakítására a véletlen adatvesztés elkerülése érdekében.",
+          "A tiszta szerkezetű adatbázisban a reláció minden attribútuma egyszerű, nem összetett adat."
+        ],
+        "correct": [
+          0,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-6",
+        "number": 6,
+        "question": "Párosítsa a Windows operációs rendszer telepítésével kapcsolatos kifejezéseket a megfelelő leírásokkal!",
+        "type": "match",
+        "pairs": [
+          [
+            "BIOS",
+            "Egy olyan program, mely tartalmazza az alapvető konfigurációs beállításokat és végrehajtja a diagnosztikai ellenőrzéseket."
+          ],
+          [
+            "bootolható USB",
+            "Egy olyan eszköz, amely például a Windows telepítőfájljait tartalmazza, és amelyről elindítható a telepítés."
+          ],
+          [
+            "partíció",
+            "A merevlemez önálló logikai egysége."
+          ],
+          [
+            "formázás",
+            "A partíción az adattároláshoz szükséges struktúra kialakítása."
+          ],
+          [
+            "aktiválás",
+            "A Windows használati jogosultságának igazolása termékkulccsal vagy digitális licenccel."
+          ]
+        ],
+        "points": 2
+      },
+      {
+        "id": "2023-osz-7",
+        "number": 7,
+        "question": "Melyik állítás igaz az L1-es és L2-es hibaelhárítás szintjeire?",
+        "options": [
+          "Az L1-es szinten a hardveres és hálózati problémákat oldják meg, az L2-es szinten pedig a szoftveres és biztonsági problémákat kezelik.",
+          "Az L1-es szinten a rendszer működését ellenőrzik és monitorozzák, az L2-es szinten pedig a rendszer fejlesztését és frissítését végzik.",
+          "Az L1-es szinten a HelpDesk ügyintézők a felhasználók által bejelentett egyszerűbb problémákat oldják meg, az L2-es szinten pedig szakemberek foglalkoznak a bonyolultabb és speciálisabb problémákkal.",
+          "Az L1-es szinten a belső felhasználók problémáit oldják meg, az L2-es szinten pedig a külső ügyfelek problémáit kezelik."
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-8",
+        "number": 8,
+        "question": "Melyik link-local cím a felsoroltak közül?",
+        "options": [
+          "FE80::2",
+          "FF01::1",
+          "FF:FE::1",
+          "FC:1 ::1"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-9",
+        "number": 9,
+        "question": "Az alábbi fogalmak közül melyek kapcsolódnak a forgalomirányítóhoz?",
+        "options": [
+          "MAC-tábla",
+          "irányítótábla",
+          "alapértelmezett átjáró",
+          "Ethernet keret"
+        ],
+        "correct": [
+          1,
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-10",
+        "number": 10,
+        "question": "Jelölje meg, hogy melyik felsorolt elem NEM része egy konvergált feszítőfának!",
+        "options": [
+          "gyökérport",
+          "gyökérponti híd",
+          "irányítótábla",
+          "kijelölt port"
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-11",
+        "number": 11,
+        "question": "Miért nem látszik egy Cisco switch statikusan létrehozott trönk portja a privilegizált módban kiadott show vlan brief parancs kimenetében?",
+        "options": [
+          "Mert a trönk port minden VLAN-nak tagja, és nem sorolódik fel mindenhol.",
+          "Mert ez a parancs csak a dinamikusan létrejött trönk portokat mutatja.",
+          "Mert a brief opció nélkül kell kiadni.",
+          "Mert a parancsot konfigurációs módban kellett volna kiadni."
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-12",
+        "number": 12,
+        "question": "Harmadik rétegbeli redundáns routerek alkalmazásakor milyen IP címet kell beállítani a hálózatban alapértelmezett átjárónak?",
+        "options": [
+          "Az aktív router fizikai IP címét.",
+          "A standby router fizikai IP címét.",
+          "A virtuális router virtuális IP címét.",
+          "A virtuális router fizikai IP címét."
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-13",
+        "number": 13,
+        "question": "Melyik állítás igaz a vezeték nélküli hálózatokra?",
+        "options": [
+          "A WEP titkosítás megbízható, ha a 2.4 GHz-es tartományban használjuk.",
+          "A 802.11n szabvány két frekvenciasávban is képes működni.",
+          "Az SSID elrejtése a fizikai címszűréssel kombinálva megbízható védelmet ad.",
+          "Infrastruktúra mód kiépítésekor mindenképpen szükség van külső hitelesítő szerverre is."
+        ],
+        "correct": [
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-14",
+        "number": 14,
+        "question": "Egészítse ki a mondatot! Egy támadó hamisított ____ üzenetet küldve képes két másik gép forgalmát lehallgatni kapcsolt hálózatban is. Ezt ____ típusú támadásnak nevezzük.",
+        "type": "textmulti",
+        "answers": [
+          "ARP",
+          "ARP spoofing"
+        ],
+        "points": 2
+      },
+      {
+        "id": "2023-osz-15",
+        "number": 15,
+        "question": "Mit kell tennünk, ha azt szeretnénk, hogy minden OSPF router egységesen és automatikusan azonnal 1-nek vegye minden 10 GB Ethernet interfész költségét?",
+        "options": [
+          "Ki kell adni az auto-cost reference-bandwidth 10000 parancsot mindegyik routeren.",
+          "Be kell állítanunk az ip ospf cost 1 paranccsal router konfigurációs módban.",
+          "Ki kell adni az auto-cost reference-bandwidth 10000 parancsot az egyik routeren.",
+          "Be kell állítanunk az ip ospf cost 1 paranccsal interfész konfigurációs módokban."
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-16",
+        "number": 16,
+        "question": "Jelölje meg, hogy melyik protokoll NEM része az IPSec keretrendszernek!",
+        "options": [
+          "ESP",
+          "AH",
+          "SSL",
+          "IKE"
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-17",
+        "number": 17,
+        "question": "Mi a konténerizáció?",
+        "options": [
+          "A konténerizáció olyan technológia, amely lehetővé teszi a szoftverek tömörítését és csomagolását a különböző platformokon való megosztáshoz.",
+          "A konténerizáció olyan technológia, amely lehetővé teszi a szoftverek izolált és hordozható futtatását a különböző környezetekben.",
+          "A konténerizáció olyan technológia, amely lehetővé teszi a szoftverek automatikus frissítését és karbantartását a különböző verziók között.",
+          "A konténerizáció olyan technológia, amely lehetővé teszi a szoftverek virtuális gépeken való futtatását a különböző operációs rendszereken."
+        ],
+        "correct": [
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-18",
+        "number": 18,
+        "question": "Mi a célja a /etc/hosts fájlnak a Linux operációs rendszerben?",
+        "options": [
+          "Tárolja a hálózati eszközök neveit és az azokhoz tartozó IP-címeket.",
+          "Tárolja a hálózati szolgáltatások listáját.",
+          "Tárolja a hálózati protokollok paramétereit.",
+          "Tárolja a hálózati interfészek konfigurációját."
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-19",
+        "number": 19,
+        "question": "Melyik SNMP üzenettípussal jelzi egy felügyelt eszköz, ha nem várt eseményt észlel?",
+        "options": [
+          "Set",
+          "Get-response",
+          "Trap",
+          "Get-request"
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2023-osz-20",
+        "number": 20,
+        "question": "Kiterjesztett ACL-ekkel akarjuk szűrni egy hálózatban a VLAN-ok közti forgalmat. A 3 rétegű tervezési modell melyik rétegét érinti ez a feladat?",
+        "options": [
+          "elosztási",
+          "központi",
+          "hozzáférési",
+          "hálózati"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "id": "2024-osz",
+    "year": 2024,
+    "season": "Őszi",
+    "date": "2024-11-05",
+    "title": "2024 őszi teszt",
+    "minutes": 45,
+    "questions": [
+      {
+        "id": "2024-osz-1",
+        "number": 1,
+        "question": "Válassza ki a felsoroltak közül a két csoportmunka eszközt!",
+        "options": [
+          "Trello",
+          "ChatGPT",
+          "CoPilot",
+          "Git"
+        ],
+        "correct": [
+          0,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-2",
+        "number": 2,
+        "question": "Munkahelyén azt kérik Öntől, hogy minden céges elektronikus levelét küldje el másolatban a felettesének úgy, hogy erről az eredeti címzett ne tudjon. Válassza ki, hogy melyik állítás igaz a fenti helyzetre!",
+        "options": [
+          "Az emailről másolatot csak kinyomtatva tud eljuttatni a feletteséhez.",
+          "A címzett mellé fel tudja venni másik címzettnek a felettesét is, más megoldás nincs a feladatra.",
+          "Ezt email esetében nem lehet megoldani.",
+          "Beállítja, hogy titkos másolatként kapja meg az emailt a felettese."
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-3",
+        "number": 3,
+        "question": "Egy szövegre szeretne a weben rákeresni úgy, hogy (karakterre pontos) helyes találatokat kapjon. Válassza ki, hogy hogyan oldaná meg!",
+        "options": [
+          "idézőjelek közé tenné a szöveget",
+          "plusz jelek közé tenné a szöveget",
+          "mínusz jelek közé tenné a szöveget",
+          "zárójelbe tenné a szöveget"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-4",
+        "number": 4,
+        "question": "Egy loT eszköz biztosan rendelkezik a felsoroltak közül az egyikkel.",
+        "options": [
+          "IP cím",
+          "Mesterséges intelligencia hozzáférés",
+          "Infraszenzor",
+          "Hőszenzor"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-5",
+        "number": 5,
+        "question": "Válassza ki, hogy mi a különbség az egyedelőfordulás\" és az egyedtípus\" között!",
+        "options": [
+          "Az egyedelőfordulás a kapcsolat az egyedtípusok között.",
+          "Nincs különbség.",
+          "Az egyedelőfordulás a valóság egy eleme, amit modellezünk, az egyedtípus pedig az azonos tulajdonságtípusokkal rendelkező egyedek absztrakciója.",
+          "Az egyedtípus a valóság egy eleme, amit modellezünk, az egyedelőfordulás pedig a vizsgált jellemző."
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-6",
+        "number": 6,
+        "question": "Számítógépén azt tapasztalja, hogy minden bekapcsoláskor elfelejti a dátum és idő beállításokat és a boot sorrendet is. Válassza ki, hogy mi lehet a baj!",
+        "options": [
+          "Virustámadás érte a számítógépét.",
+          "Tönkrement a hálózati vezérlőkártya.",
+          "Frissítenie kell az operációs rendszerét, mert elavult.",
+          "Lemerült a CMOS elem, cserélni szükséges."
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-7",
+        "number": 7,
+        "question": "A munkahelyén használt programmal mentett állományokat, egy másik számítógépen ugyanazzal a programmal nem tudja megnyitni. Válassza ki, hogy melyik két eset lehet ennek az oka!",
+        "options": [
+          "A két számítógépen nem ugyanaz a felhasználói fiók felhasználói neve, ez okozza a gondot.",
+          "Sérült a mentett állomány.",
+          "Régebbi szoftververzióban készült a mentés, ezt az új nem tudja megnyitni.",
+          "Újabb szoftververzióban készült a mentés, ezt a régi nem tudja megnyitni."
+        ],
+        "correct": [
+          1,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-8",
+        "number": 8,
+        "question": "Olyan hálózatot kell terveznie, amiben 256 darab számítógépet kell IPv4-es címmel ellátnia. Válassza ki, hogy milyen prefixű maszkot kell használnia!",
+        "options": [
+          "/23",
+          "/22",
+          "/25",
+          "/24"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-9",
+        "number": 9,
+        "question": "Forgalomirányítóján az egyik interfészhez kapcsolódó hálózat nem jelenik meg a forgalomirányító táblában. Válassza ki a három lehetséges okot!",
+        "options": [
+          "Újra kell indítani a forgalomirányítót, hogy megjelenjen a bejegyzés a forgalomirányító táblában",
+          "Az interfészen a protokoll állapota DOWN. (az interfészhez nem csatlakozik kábel)",
+          "Az interfésznek nincs beállítva IP cim.",
+          "Az interfész nincs felkapcsolva."
+        ],
+        "correct": [
+          1,
+          2,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-10",
+        "number": 10,
+        "question": "Válassza ki, hogy feszítőfa protokoll (STP) használatakor melyik állítás NEM helytálló!",
+        "options": [
+          "A gyökérponti hídnak (root bridge) lesz legalább egy alternativ szerepkörű portja.",
+          "Egy STP szegmensen csak egy gyökérponti híd (root bridge) lehet.",
+          "A gyökérponti hídnak (root bridge) nem lesz gyökér (root) szerepkörű portja.",
+          "A gyökérponti hídnak minden portja kijelölt (designated) szerepkörű."
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-11",
+        "number": 11,
+        "question": "Válassza ki, hogy a felsoroltak közül milyen két hátránya lehet annak, ha egy sok végberendezést tartalmazó, nagy hálózatban nem használ VLAN-okat!",
+        "options": [
+          "Kevesebb felhasználói fiók lesz létrehozható.",
+          "Kevesebb IPv6-os cím lesz használható.",
+          "Nehezebb a hálózatfelügyelet megvalósítása a szegmensen.",
+          "A szórásos forgalom megnövekedhet."
+        ],
+        "correct": [
+          2,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-12",
+        "number": 12,
+        "question": "A munkahelyi hálózata két internetkapcsolattal rendelkezik, hogy redundáns átjárót tudjon biztosítani a számítógépeinek. Válassza ki, hogy milyen típusú redundancia ez!",
+        "options": [
+          "második rétegbeli (L2)",
+          "ez nem redundancia",
+          "alkalmazási rétegbeli",
+          "harmadik rétegbeli (L3)"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-13",
+        "number": 13,
+        "question": "Válassza ki, hogy milyen technológia segítségével kommunikálnak a WIFI-s eszközök!",
+        "options": [
+          "mikrohullámokkal",
+          "optikai szálas technológiával",
+          "RFID technológiával",
+          "rádiófrekvenciákkal"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-14",
+        "number": 14,
+        "question": "Válassza ki, hogy Social Engineering (adathalászat) használatával honnan próbálnak a támadók adatokat megszerezni!",
+        "options": [
+          "adattárházaktól",
+          "forgalomirányítóktól",
+          "személyektől",
+          "weblapokról"
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-15",
+        "number": 15,
+        "question": "Válassza ki, hogy melyik igaz a lebegő statikus útvonalra, ha dinamikus forgalomirányító protokoll alkalmazása mellett használjuk!",
+        "options": [
+          "Ilyen útvonal csak IPv6-nál létezik.",
+          "Az adminisztratív távolsága nagyobb, mint egy dinamikus forgalomirányító protokoll adminisztratív távolsága.",
+          "Az adminisztratív távolsága kisebb, mint egy dinamikus forgalomirányító protokoll adminisztratív távolsága.",
+          "Az adminisztratív távolsága pontosan akkora, mint egy dinamikus forgalomirányító protokoll adminisztratív távolsága."
+        ],
+        "correct": [
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-16",
+        "number": 16,
+        "question": "Válassza ki, hogy a PPP az OSI modell mely rétegéhez köthető protokoll!",
+        "options": [
+          "szállítási",
+          "fizikai",
+          "hálózati",
+          "adatkapcsolati"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-17",
+        "number": 17,
+        "question": "A felsorolásból válassza ki a három felhőszolgáltatási szintet!",
+        "options": [
+          "laas",
+          "GaaS",
+          "Saas",
+          "Paas"
+        ],
+        "correct": [
+          0,
+          2,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-18",
+        "number": 18,
+        "question": "Válassza ki, hogy melyik szerepkör NEM telepíthető Windows szerveren!",
+        "options": [
+          "webkiszolgáló",
+          "távelérés",
+          "AD tartományi szolgáltatás",
+          "AD adatbázis szolgáltatás"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-19",
+        "number": 19,
+        "question": "Válassza ki, hogy mire szolgál a SYSLOG!",
+        "options": [
+          "A napló üzenetek központi gyűjtésére.",
+          "A hálózati logikai működésének modellezésére.",
+          "A napló üzenetek decentralizált tárolására.",
+          "A hálózati forgalom titkosítására."
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2024-osz-20",
+        "number": 20,
+        "question": "Válassza ki, hogy a háromrétegű hálózattervezési modellben mi a szerepe a központi (core) rétegnek!",
+        "options": [
+          "Összeköttetést biztosít a hálózati állomások és a végberendezések számára.",
+          "Összeköttetést biztosít az elosztási (distribution) rétegbeli eszközök között.",
+          "Nincs ilyen réteg ebben a modellben.",
+          "Összeköttetést biztosít a kisebb, helyi hálózatok között."
+        ],
+        "correct": [
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "id": "2025-tavasz",
+    "year": 2025,
+    "season": "Tavaszi",
+    "date": "2025-05-28",
+    "title": "2025 tavaszi teszt",
+    "minutes": 45,
+    "questions": [
+      {
+        "id": "2025-tavasz-1",
+        "number": 1,
+        "question": "Lehetséges-e egy Git repositoryt megosztani másokkal?",
+        "options": [
+          "Igen, de csak olvasásra.",
+          "Igen, lehetséges, de csak munkahelyen belül.",
+          "Igen, lehetséges, bármelyik Git felhasználóval.",
+          "Nem lehetséges."
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-2",
+        "number": 2,
+        "question": "Munkahelyén gyakran táblázatokat kell kitöltenie és visszaküldenie. A felsoroltak közül melyik az optimális és korszerű megoldás erre a feladatra?",
+        "options": [
+          "Az Excel táblázatot kinyomtatjuk, majd szkennelve visszaküldjük emailben.",
+          "A táblázatokat nyomtatva kell továbbítani.",
+          "Excel állományok küldése emailben oda-vissza.",
+          "Online táblázatok használata."
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-3",
+        "number": 3,
+        "question": "Lehetséges-e interneten egy képre vagy egy képrészletre rákeresni, hogy hasonló találatokat kapjunk?",
+        "options": [
+          "Igen, de csak weben talált képre lehet.",
+          "Nem lehet.",
+          "Igen, bármilyen kép esetén lehet.",
+          "A feladat csak telefonon oldható meg, számítógépen nem."
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-4",
+        "number": 4,
+        "question": "Mely megállapítások igazak a REST API technológiára?",
+        "options": [
+          "text/css adatformátumot használ.",
+          "application/json adatformátumot használ.",
+          "FTP kérésekkel kommunikál.",
+          "HTTP kérésekkel kommunikál."
+        ],
+        "correct": [
+          1,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-5",
+        "number": 5,
+        "question": "Az ER (entity-relationship) modellben melyik lehet tulajdonságtípus?",
+        "options": [
+          "származtatott",
+          "összetett",
+          "egyszerű (atomi)",
+          "táblás"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-6",
+        "number": 6,
+        "question": "Számítógépére email kliens alkalmazást telepített. Mit kell beállítania a levelező kliensben, hogy rendeltetésszerűen tudja használni?",
+        "options": [
+          "POP3 vagy IMAP szervert kell beállítani.",
+          "DNS szervert kell beállítani.",
+          "SMTP szervert kell beállítani.",
+          "DHCP szervert kell beállítani."
+        ],
+        "correct": [
+          0,
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-7",
+        "number": 7,
+        "question": "A munkahelyen használt számítógépen sérült a felhasználói program konfigurációs állománya (amiben a beállításait tárolja a program). Hogyan oldaná meg a problémát?",
+        "options": [
+          "Újra telepítené a programot, hogy a sérült állomány cseréje megtörténjen.",
+          "Interneten keresne egy alkalmas konfigurációs állományt.",
+          "Másik gépről szerezne egy hibátlan konfigurációs állományt.",
+          "Más programot vásárolna a cégnek, mert máshogy nem oldható meg a probléma."
+        ],
+        "correct": [
+          0,
+          2
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "Az újratelepítés nem minden programnál cseréli a sérült felhasználói konfigurációt. A forrás két megoldását fogadjuk el."
+      },
+      {
+        "id": "2025-tavasz-8",
+        "number": 8,
+        "question": "Forgalomirányítójának két interfészén is az FE80::1-es cím van beállítva. Mely állítások igazak ebben az esetben?",
+        "options": [
+          "Meg kell változtatnia az egyik címet a helyes működéshez.",
+          "A két cím használható forgalomirányításra is.",
+          "A két cím nem zavarja egymást, mert link local címek, más hálózatban vannak.",
+          "Mindkét cím prefixe /64."
+        ],
+        "correct": [
+          2,
+          3
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "A link-local címtartomány és az interfész prefixhossza nem teljesen azonos fogalom; a feladatot a forrás szerinti értelemben pontozzuk."
+      },
+      {
+        "id": "2025-tavasz-9",
+        "number": 9,
+        "question": "Mit jelent az, hogy a kapcsoló portsűrűsége nyolc?",
+        "options": [
+          "Nyolc VLAN-t tud kezelni.",
+          "A kapcsolónak nyolc portja van.",
+          "Nyolc keretet tud egyszerre kezelni, bufferelni.",
+          "A kapcsolónak csak nyolc portját lehet EtherChannelhez rendelni."
+        ],
+        "correct": [
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-10",
+        "number": 10,
+        "question": "Kapcsolt hálózatán az eddigi gyökérponti híd helyett másik kapcsolót szeretne gyökérponti hídként kijelölni. Mit kell tennie?",
+        "options": [
+          "A kijelölendő eszközön a legkisebbre kell állítani a prioritást.",
+          "Extended system ID-t kell használnia az eszközön, ami nagyobb a többinél.",
+          "A kijelölendő eszközön a legkisebbre kell állítani a prioritást.",
+          "Extended system ID-t kell használnia az eszközön, ami kisebb a többinėl."
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "Az eredetiben a helyes válasz szó szerint kétszer fordul elő. A két azonos szöveget egyenértékűnek fogadjuk el.",
+        "acceptedSingles": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": "2025-tavasz-11",
+        "number": 11,
+        "question": "A felsoroltak közül melyik protokoll kapcsolódik a VLAN-okhoz?",
+        "options": [
+          "IEEE 802.3",
+          "A fentiek közül egyik sem.",
+          "IEEE 802.11",
+          "IEEE 802.1q"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-12",
+        "number": 12,
+        "question": "A felsorolt protokollok közül melyik NEM FHRP megoldás?",
+        "options": [
+          "Ethernet",
+          "GLBP",
+          "HSRP",
+          "VRRP"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-13",
+        "number": 13,
+        "question": "A felsoroltak közül melyik képes a legjobban akadályozni egy WIFI jel terjedését?",
+        "options": [
+          "papírlap",
+          "gipszkarton",
+          "betonfal",
+          "fatábla"
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-14",
+        "number": 14,
+        "question": "Melyik kártevő teszi lehetővé, hogy a számítógép billentyűzetén minden leütés naplózásra kerüljön?",
+        "options": [
+          "hardware",
+          "ransomware",
+          "trójai",
+          "keylogger"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-15",
+        "number": 15,
+        "question": "Többterületű OSPF alkalmazása esetén hogyan tudja megvalósítani a területek közötti (inter-area) forgalomirányítást?",
+        "options": [
+          "Mindegyik területet közvetlenül a 0-s területhez csatlakoztatja.",
+          "Mindegyik területet közvetlenül vagy virtuálisan a 0-s területhez csatlakoztatja.",
+          "Mindegyik területet közvetlenül az 1-es területhez csatlakoztatja.",
+          "A területeket tetszőlegesen csatlakoztatja egymáshoz."
+        ],
+        "correct": [
+          0,
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-16",
+        "number": 16,
+        "question": "A felsoroltak közül melyek VPN megoldások?",
+        "options": [
+          "Remote Access (Távoli hozzáférésű)",
+          "Site-to-site (Telephelyek közötti)",
+          "PPPoE (Pont-pont Etherneten)",
+          "Unsecured Connection (Nem biztonságos kapcsolat)"
+        ],
+        "correct": [
+          0,
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-17",
+        "number": 17,
+        "question": "Melyik állítás NEM igaz a SaaS (Software as a Sevice) felhőszolgáltatási szintre?",
+        "options": [
+          "A felhasználók az interneten keresztül kapcsolódnak az alkalmazásokhoz.",
+          "Az SaaS esetében a felhasználó informatikai struktúrát bérelhet használatalapú díjfizetéssel.",
+          "A szolgáltatott szoftverek révén szoftveralkalmazások tehetők elérhetővé az interneten.",
+          "Az Saas esetében a felhőszolgáltatók üzemeltetik és kezelik az alkalmazásokat, valamint a háttér-struktúrát."
+        ],
+        "correct": [
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-18",
+        "number": 18,
+        "question": "A felsoroltak közül mely szolgáltatások állíthatók be LINUX szerveren?",
+        "options": [
+          "FTP",
+          "DNS",
+          "STP",
+          "DHCP"
+        ],
+        "correct": [
+          0,
+          1,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-tavasz-19",
+        "number": 19,
+        "question": "Ha a hálózatunk tervezésénél redundáns megoldásokat alkalmazunk, akkor miket fog ez biztosítani a hálózat működésében?",
+        "options": [
+          "sávszélesség növelése",
+          "titkosítás",
+          "alagút technológia",
+          "nagyobb rendelkezésre állás"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "A redundancia általánosan nagyobb rendelkezésre állást biztosít. A sávszélesség növekedése nem automatikus; egy helyes választ kérünk."
+      },
+      {
+        "id": "2025-tavasz-20",
+        "number": 20,
+        "question": "Melyik protokollhoz köthető az MIB (Management Information Base)?",
+        "options": [
+          "SNMP",
+          "SMTP",
+          "LLDP",
+          "SYSLOG"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "id": "2025-osz",
+    "year": 2025,
+    "season": "Őszi",
+    "date": "2025-11-04",
+    "title": "2025 őszi teszt",
+    "minutes": 45,
+    "questions": [
+      {
+        "id": "2025-osz-1",
+        "number": 1,
+        "question": "Milyen célra használható a felsoroltak közül a Git és a Trello?",
+        "options": [
+          "Hálózatmenedzsmentre",
+          "Csoportmunkára",
+          "Univerzális fordításra",
+          "Mesterséges intelligencia platformként"
+        ],
+        "correct": [
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-2",
+        "number": 2,
+        "question": "A munkahelyén csapatépítő tréningről kap emailt. A küldő kéri, hogy jelezzenek vissza a címzettek, hogy részt tudnak-e venni a tréningen. Mi a teendője Önnek, mint az email címzettjének?",
+        "options": [
+          "Visszajelzek, hogy ott leszek-e vagy nem.",
+          "Nem jelzek vissza, inkább felhívom a szervezőt.",
+          "Visszajelzek, hogy vegán vagyok.",
+          "Nem jelzek vissza, mert nem szoktam."
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-3",
+        "number": 3,
+        "question": "Hálózati eszközt szemrevételezve azt látja, hogy az egyik használatban lévő porthoz tartozó LED nem világít. Milyen hibára gyanakszik?",
+        "options": [
+          "IP cím probléma lehet.",
+          "Protokoll beágyazási probléma lehet.",
+          "Fizikai probléma lehet.",
+          "Forgalmirányítási probléma lehet."
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "A nem világító port-LED alapján elsődlegesen fizikai problémára lehet következtetni; a kérdés eredetileg két választ kér, de csak egy egyértelmű."
+      },
+      {
+        "id": "2025-osz-4",
+        "number": 4,
+        "question": "Az alábbi JSON formátumban milyen hibákat talál? {\"mezo1\": null, \"mezo2\": true, \"mezo3\": \"false\", \"mezo4\": \"null\"}",
+        "options": [
+          "A null és true értéknek idézőjelben kellene lennie.",
+          "A null értékhez nem kell az idézőjel.",
+          "A mezo1-hez és mezo2-höz nem kell az idézőjel.",
+          "A false értékhez nem kell az idézőjel.",
+          "A mezo3-hoz és mezo4-hez kell idézőjel."
+        ],
+        "correct": [
+          1,
+          3
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "A bemutatott JSON érvényes: a \"false\" és \"null\" idézőjelek között szöveges érték, nem szintaktikai hiba. A feladat ezért automatikusan 2 pontot ér.",
+        "autoCredit": true
+      },
+      {
+        "id": "2025-osz-5",
+        "number": 5,
+        "question": "Relációsémát használva, melyek az igaz állítások?",
+        "options": [
+          "A kulcs a kulcsjelöltek részhalmaza.",
+          "A relációsémának mindig rendelkeznie kell elsődleges kulccsal.",
+          "A kulcs csak szám típusú lehet (ID).",
+          "Az idegen kulcs és az elsődleges kulcs az ugyanaz."
+        ],
+        "correct": [
+          0,
+          1
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "Az elsődleges kulcsra vonatkozó kijelentés technikailag nem minden SQL-táblára igaz; forrás szerinti válaszok."
+      },
+      {
+        "id": "2025-osz-6",
+        "number": 6,
+        "question": "Melyek az igaz állítások az SSD háttértárra vonatkozóan?",
+        "options": [
+          "Mágneses elven működik.",
+          "Gyorsabb adatelérést biztosít mind a HDD.",
+          "Tartalma kikapcsolás esetén elvész.",
+          "Nem tartalmaz mozgó alkatrészt."
+        ],
+        "correct": [
+          1,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-7",
+        "number": 7,
+        "question": "Milyen típusai vannak a biztonsági mentésnek?",
+        "options": [
+          "teljes",
+          "növekményes",
+          "különbségi",
+          "ütemezett"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-8",
+        "number": 8,
+        "question": "Milyen alapértelmezett maszk tartozik a D osztályú IPv4-es címekhez?",
+        "options": [
+          "255.255.255.0",
+          "255.0.0.0",
+          "Nem tartozik hozzá alapértelmezett maszk.",
+          "255.255.0.0",
+          "255.255.255.255"
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-9",
+        "number": 9,
+        "question": "Forgalomirányítón mely mezők jelennek meg a forgalomirányító táblában?",
+        "options": [
+          "Kimenő interface.",
+          "Célhálózati IP címek.",
+          "Szomszéd eszköz elérésének költségértéke.",
+          "Cél IP címek (csomóponti címek)."
+        ],
+        "correct": [
+          0,
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-10",
+        "number": 10,
+        "question": "Mely protokollok képesek második rétegbeli port-aggregációt létrehozni?",
+        "options": [
+          "LACP",
+          "PAgP",
+          "HSRP",
+          "STP"
+        ],
+        "correct": [
+          0,
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-11",
+        "number": 11,
+        "question": "Fejezze be a mondatot! VLAN-ok kialakítása során a router-on-a-stick megoldás esetén a forgalomirányító...",
+        "options": [
+          "egy fizikai interface-t használ, a VLAN-ok szuperhálózatából származó IP címmel.",
+          "egy fizikai interface-t használ, de több alinterface-t hoz létre.",
+          "minden VLAN-hoz külön interface-t használ.",
+          "a VTP segítségével kezeli az interface-ek IP beállításait."
+        ],
+        "correct": [
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-12",
+        "number": 12,
+        "question": "Harmadik rétegbeli redundancia esetén melyek az igaz állítások?",
+        "options": [
+          "Az átjáró MAC címe egy véletlenszerű MAC cím lesz.",
+          "Az átjáró MAC címét ARP protokoll segítségével kérik le a kliensek.",
+          "A kliensek MAC címe lesz az átjáró MAC címe.",
+          "Az átjáró MAC címe egy virtuális MAC cím lesz."
+        ],
+        "correct": [
+          1,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-13",
+        "number": 13,
+        "question": "Mely frekvenciákon működhetnek a vezeték nélküli helyi hálózatok?",
+        "options": [
+          "5 GHz",
+          "3 GHz",
+          "2 GHz",
+          "6 GHz",
+          "2,4 GHz"
+        ],
+        "correct": [
+          0,
+          3,
+          4
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "A forrásban kézzel is jelezve: három frekvenciasáv helyes, nem kettő (2,4 / 5 / 6 GHz)."
+      },
+      {
+        "id": "2025-osz-14",
+        "number": 14,
+        "question": "Melyik az igaz állítás a DHCP kiéheztetés támadásra vonatkozóan?",
+        "options": [
+          "A DHCP kiéheztetés ellehetetleníti, hogy a kliensek IP címet kapjanak.",
+          "A DHCP kiéheztetés ellehetetleníti, hogy a kliensek PoE-n keresztül kapjanak áramot.",
+          "A DHCP kiéheztetés ellehetetleníti, hogy a kliensek MAC címet kapjanak.",
+          "A DHCP kiéheztetés ellehetetleníti a DHCP kiszolgáló elérését."
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-15",
+        "number": 15,
+        "question": "A statikus útvonalnak melyik típusa határozza meg a kimeneti interface-t vagy a következő ugrás IP címét arra az esetre, amikor a forgalomirányító tábla nem tartalmaz útvonalat a célhálózat felé?",
+        "options": [
+          "teljesen definiált statikus útvonal",
+          "rekurzív statikus útvonal",
+          "klasszikus statikus útvonal",
+          "alapértelmezett útvonal"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-16",
+        "number": 16,
+        "question": "Válassza ki, hogy mely állítás NEM igaz a VPN-re!",
+        "options": [
+          "Titkosított adatátvitelt biztosít.",
+          "Alagút technikát használ.",
+          "Lehet telephelyek közötti, távoli hozzáférésű és SSL VPN is.",
+          "Csak UDP datagramok továbbítására használjuk."
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-17",
+        "number": 17,
+        "question": "Google Drive használatakor milyen típusú felhőszolgáltatást használ?",
+        "options": [
+          "FaaS",
+          "PaaS",
+          "SaaS",
+          "IaaS"
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-18",
+        "number": 18,
+        "question": "Válassza ki, hogy Linux használata esetén az /etc/passwd állomány milyen felhasználói adatot NEM tartalmaz! felhasználói azonosító szám (uid)",
+        "options": [
+          "felhasználói azonosító szám (uid)",
+          "belépés időpontja",
+          "felhasználó home könyvtárának abszolút elérési útja",
+          "csoportazonosító szám (gid)",
+          "felhasználói név"
+        ],
+        "correct": [
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-19",
+        "number": 19,
+        "question": "A felsoroltak közül melyek használhatóak a hálózat, hálózati eszközök monitorozására?",
+        "options": [
+          "SMTP",
+          "Follow the Flow",
+          "SNMP",
+          "NETFLOW"
+        ],
+        "correct": [
+          2,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2025-osz-20",
+        "number": 20,
+        "question": "Hálózatát új szegmenssel bővítenie. Mely szempontokat veszi figyelembe a tervezés során?",
+        "options": [
+          "Az új hálózati eszközöket is elzárt, védett helyre kell telepíteni.",
+          "Az új hálózati eszközök portsűrűsége legyen 10-15%-kal több, mint a tervezett csatlakoztatott eszközök száma.",
+          "Az új hálózati eszközök portsebessége nem fontos, elég, ha van kapcsolat a csomópontok között.",
+          "A csomópontok kábelezésénél elég lengőkábelt használni, így csökkenthetők a költségek."
+        ],
+        "correct": [
+          0,
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "id": "2026-tavasz",
+    "year": 2026,
+    "season": "Tavaszi",
+    "date": "2026-05-28",
+    "title": "2026 tavaszi teszt",
+    "minutes": 45,
+    "questions": [
+      {
+        "id": "2026-tavasz-1",
+        "number": 1,
+        "question": "A Gitben a pillanatképek (commit-ok) mennyi idő után törlődnek?",
+        "options": [
+          "automatikusan nem törlődnek",
+          "egy év után",
+          "egy hét után",
+          "egy hónap után"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-2",
+        "number": 2,
+        "question": "Munkahelyén a minőségirányítási csoportot vezeti. Munkája során az egyik kollégájával nem egyezik a véleményük. Hogyan oldaná meg a helyzetet?",
+        "options": [
+          "jelentené a felettesének, hogy a kolléga ellentmondott Önnek",
+          "négyszemközt, erőteljes hangon, kemény stílusban bizonygatná az igazát",
+          "mindenki előtt, erőteljes hangon bizonygatná az igazát",
+          "négyszemközt nyugodt, konstruktív beszélgetést folytatna kollégájával"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-3",
+        "number": 3,
+        "question": "Hálózatán konfigurációs hibára gyanakszik. Az egyik eszközön hibaüzenetet talál. Hol próbálna meg utána nézni, hogy mit jelenthet?",
+        "options": [
+          "a gyakorikerdesek.hu oldalon",
+          "a Google fordítót hívná segítségül",
+          "az eszköz gyártójának weboldalán, fórumain",
+          "VPN kapcsolattal a Darkweb-en"
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-4",
+        "number": 4,
+        "question": "Milyen felhasználási módja NEM lehetséges ma a mesterséges intelligenciának?",
+        "options": [
+          "kérdésekre adott válasz alapján bárki hatékonyan gyógyíthatja komoly betegségét",
+          "rövid leírás alapján történetet tud írni",
+          "minta alapján tesztadatokat tud generáltatni",
+          "szöveges leírás után képeket tud generálni"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-5",
+        "number": 5,
+        "question": "Adatbázis témakörben, relációs sémában mit jelent a kulcsmegszorítás?",
+        "options": [
+          "egy relációsémának mindig rendelkeznie kell elsődleges kulccsal",
+          "egy relációsémában nem lehet semmiféle kulcs",
+          "egy relációsémában nem lehet elsődleges kulcs, csak idegen kulcs",
+          "nincs ilyen megszorítás a relációs adatmodellben"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "A kulcsmegszorítás meghatározása leegyszerűsített; a dokumentum szerinti válasz használatos."
+      },
+      {
+        "id": "2026-tavasz-6",
+        "number": 6,
+        "question": "Számítógépén a PATH környezeti változóban megtalálható az XY elérési út. Mit jelent ez?",
+        "options": [
+          "az XY elérési út helyén található futtatható állományok futtatása globálisan tiltott",
+          "az XY elérési út helyén található futtatható állományok bárhonnan elérhetőek, futtathatók",
+          "az XY elérési út helyén található az összes meghajtó a számítógéphez csatolva",
+          "az XY elérési út helyére kerülnek elmentésre az új állományok a számítógépen"
+        ],
+        "correct": [
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-7",
+        "number": 7,
+        "question": "Mi a különbség a hálózatmonitorozás és a hálózatfelügyelet között?",
+        "options": [
+          "Monitorozás: megfigyelés, Felügyelet: aktív beavatkozás",
+          "Monitorozás: adatmentés, Felügyelet: archiválás",
+          "Monitorozás: felhasználói oktatás, Felügyelet: hardver karbantartás",
+          "Nincs különbség"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-8",
+        "number": 8,
+        "question": "Milyen maszkot célszerű választanunk IPv6 címzés esetén, ha az interfészazonosítót az EUI-64 módszer szerint szeretnénk generálni?",
+        "options": [
+          "/65",
+          "/96",
+          "/64",
+          "/128"
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-9",
+        "number": 9,
+        "question": "Mi a forgalomirányító (router) feladata?",
+        "options": [
+          "logikai hálózatokat köt össze egymással a harmadik rétegbeli címzés segítségével",
+          "beérkező fizikai kereteket továbbít minden portjára, kivéve, ahonnan érkezett",
+          "címtár szolgáltatást nyújt kisvállalatok részére",
+          "logikai hálózatokat köt össze egymással a második rétegbeli címzés segítségével"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-10",
+        "number": 10,
+        "question": "Egy feszítőfa protokollt (STP) használó kapcsolt hálózati szegmensen hány kijelölt (designed) kapcsoló (switch) lehet?",
+        "options": [
+          "eggyel kevesebb lesz belőle, mint ahány kapcsoló (switch) van a szegmensben",
+          "csak egy lehet belőle",
+          "ilyen kapcsoló (switch) nincs a feszítőfa protokoll (STP) kapcsán",
+          "minden kapcsoló (switch) kijelölt lesz"
+        ],
+        "correct": [
+          1
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-11",
+        "number": 11,
+        "question": "Mi jellemzi a hang VLAN-t (voice VLAN)?",
+        "options": [
+          "alacsony QoS prioritás",
+          "magas QoS prioritás",
+          "nagy késleltetés",
+          "kis késleltetés"
+        ],
+        "correct": [
+          1,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-12",
+        "number": 12,
+        "question": "Mit biztosítanak a harmadik rétegbeli redundáns megoldások egy hálózatban?",
+        "options": [
+          "virtuális átjárót a klienseknek",
+          "nagyobb sávszélességet a kapcsolók között",
+          "vírusvédelmet",
+          "redundáns kapcsolatot a kapcsolók között"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-13",
+        "number": 13,
+        "question": "Melyek az igaz állítások a 802.11 szabványokra?",
+        "options": [
+          "rádiófrekvenciát használnak a kommunikációhoz",
+          "Bluetooth néven is szokták emlegetni ezeket",
+          "leggyakrabban 2,4 és 5 GHz-en működnek",
+          "MIMO technológiát is használhatnak"
+        ],
+        "correct": [
+          0,
+          2,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-14",
+        "number": 14,
+        "question": "A felsoroltak közül melyik NEM lehet konfigurációs probléma a hálózaton?",
+        "options": [
+          "Jelszó komplexitási probléma",
+          "hálózati protokoll hibája",
+          "webes szolgáltatás probléma (pl.: javascript engedélyezés)",
+          "nem biztonságos kapcsolaton keresztüli adattovábbítás"
+        ],
+        "correct": [
+          2
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-15",
+        "number": 15,
+        "question": "Munkahelyén OSPF forgalomirányító protokollt használnak. Melyek a helyes állítások a felsoroltak közül?",
+        "options": [
+          "az OSPF útválasztó folyamatban a sávszélességnek nagy szerepe van",
+          "Passzív interfészen nem küld HELLO üzeneteket az OSPF",
+          "az OSPF alapértelmezett adminisztratív távolsága 110",
+          "az OSPF maximális ugrásszáma 15"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "A feladat megfogalmazása vitatható: a JavaScript engedélyezése szintén konfigurációs kérdés lehet."
+      },
+      {
+        "id": "2026-tavasz-16",
+        "number": 16,
+        "question": "Válassza ki, hogy mely állítások igazak a WAN típusú hálózatokra!",
+        "options": [
+          "Az Internet egy WAN típusú hálózat.",
+          "A WAN típusú hálózat sebessége alacsonyabb, mint a LAN hálózat sebessége.",
+          "A WAN típusú hálózat általában kisebb földrajzi területet fed le, míg a LAN típusú hálózat nagyobb területet.",
+          "A WAN típusú hálózat szinte mindig Ethernet és Wi-Fi megoldásokra épül."
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "A forrás 2 választ kér, de a WAN sebessége nem feltétlenül alacsonyabb a LAN sebességénél, ezért egy választ kérünk."
+      },
+      {
+        "id": "2026-tavasz-17",
+        "number": 17,
+        "question": "Melyik tulajdonság NEM tartozik a virtualizálás előnyei közé?",
+        "options": [
+          "korlátozott kompatibilitás",
+          "jobb erőforrás kihasználás",
+          "költségmegtakarítás",
+          "skálázhatóság"
+        ],
+        "correct": [
+          0
+        ],
+        "type": "choice",
+        "points": 2,
+        "note": "A WAN nem minden esetben lassabb a LAN-nál. A feladat eredetileg két választ kér, de csak az internetes állítás általánosan igaz."
+      },
+      {
+        "id": "2026-tavasz-18",
+        "number": 18,
+        "question": "A felsoroltak közül melyek valósíthatóak meg közvetlenül csoportházirenddel?",
+        "options": [
+          "Particionálás",
+          "Meghajtók csatlakoztatása",
+          "Tiltások",
+          "Jelszó létrehozására vonatkozó szabályok beállítása"
+        ],
+        "correct": [
+          1,
+          2,
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-19",
+        "number": 19,
+        "question": "Mire szolgál egy syslog szerver?",
+        "options": [
+          "Az operációs rendszer telepítésére",
+          "A hálózati kábelek tesztelésére",
+          "A felhasználók jelszavainak mentésére",
+          "Hálózati eszközök naplóinak (működés során kiadott parancsok és rendszerüzenetek) központi gyűjtésére és elemzésére"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      },
+      {
+        "id": "2026-tavasz-20",
+        "number": 20,
+        "question": "Mi a háromrétegű hálózattervezési modell hozzáférési rétegének feladata?",
+        "options": [
+          "Routing",
+          "Házirendek alkalmazása",
+          "Kapcsolás",
+          "Hálózatelérés"
+        ],
+        "correct": [
+          3
+        ],
+        "type": "choice",
+        "points": 2
+      }
+    ]
+  }
+];
+
+  </script>
+  <script>
+(()=>{
+/* INF / Gyakorló • statikus GitHub Pages alkalmazás • személyes adatok a böngészőben */
+'use strict';
+const EXAMS = window.EXAMS || [];
+const $ = (s,root=document) => root.querySelector(s);
+const esc = s => String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const multiline = s => esc(s).replace(/\n/g,'<br>');
+const rand = a => {let r=[...a];for(let i=r.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[r[i],r[j]]=[r[j],r[i]];}return r;};
+const slug = s => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-zA-Z0-9-]/g,'_');
+const stamp = t => new Date(t).toLocaleString('hu-HU');
+const timeFmt = ms => {let x=Math.max(0,Math.ceil(ms/1000));return `${String(Math.floor(x/60)).padStart(2,'0')}:${String(x%60).padStart(2,'0')}`};
+const screen = $('#screen');
+let session=null,clockHandle=null,filter='all',lastResults=null;
+const toast=t=>{const d=document.createElement('div');d.className='toast';d.textContent=t;$('#toast').append(d);setTimeout(()=>d.remove(),4000)};
+function top(){window.scrollTo({top:0,behavior:'instant'});}
+function stopClock(){if(clockHandle){clearInterval(clockHandle);clockHandle=null;}}
+function dataFor(id){return EXAMS.find(e=>e.id===id)}
+function home(){stopClock(); session=null;document.body.classList.remove('in-exam');top();
+ const visible=EXAMS.filter(x=>filter==='all'||x.season.toLowerCase()===(filter==='spring'?'tavaszi':'őszi'));
+ screen.innerHTML=`<section class="hero"><div><div class="eyebrow">TANULJ · GYAKOROLJ · FEJLŐDJ</div><h1>Sikeres vizsga?<br><em>Gyakorlással kezdődik.</em></h1><p>Valódi korábbi informatikai rendszer- és alkalmazás-üzemeltető technikus tesztek, véletlenszerű kérdés- és válaszsorrenddel. Mérd fel a tudásod, és tanulj a hibáidból!</p></div><div class="hero-art"><div class="terminal"><span class="purple">$</span> vizsga --gyakorlas<br><span class="green">✓</span> 7 vizsgasor<br><span class="green">✓</span> 140 eredeti kérdés<br><span class="green">✓</span> Azonnali kiértékelés<br><span class="green">✓</span> PDF-eredménylap<br><br><span class="purple">→</span> készen állsz?</div></div></section>
+ <div class="statstrip"><div class="stat"><strong>7</strong><small>vizsgasor</small></div><div class="stat"><strong>140</strong><small>gyakorlókérdés</small></div><div class="stat"><strong>45 perc</strong><small>tesztenként</small></div><div class="stat"><strong>40%</strong><small>megfelelési küszöb</small></div></div>
+ <div class="section-heading"><div><h2>Válassz vizsgasort</h2><p>Mindegyik teszt 20 kérdésből áll, maximum 40 pontért.</p></div><div class="filters" role="group" aria-label="Félév szerinti szűrés">${[['all','Összes'],['spring','Tavaszi'],['autumn','Őszi']].map(([k,t])=>`<button class="filter ${k===filter?'active':''}" data-filter="${k}">${t}</button>`).join('')}</div></div>
+ <div class="exam-grid">${visible.map(e=>`<article class="exam-card"><div class="exam-top"><span class="season ${e.season==='Őszi'?'autumn':''}">${e.season} vizsga</span><span class="exam-date">${esc(e.date)}</span></div><h3>${e.year} / ${e.season==='Őszi'?'II.':'I.'}</h3><p>Informatikai rendszer- és alkalmazás-üzemeltető technikus</p><div class="exam-bottom"><span class="exam-info">◷ 45 perc · 20 kérdés</span><button class="btn btn-primary btn-sm" data-exam="${e.id}">Gyakorlás →</button></div></article>`).join('')}</div><div class="section-note"><b>Gyakorló üzemmód:</b> a válaszokat és a kérdéseket véletlenszerűen rendezzük, és a már elhagyott kérdésre nem lehet visszalépni. A kihagyott feladatok a végén ismét megjelennek. A böngészőből kilépést az oldal rögzíti, de teljes csalásvédelemhez felügyelt vizsgakörnyezet szükséges.</div>`;
+ screen.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;home()});screen.querySelectorAll('[data-exam]').forEach(b=>b.onclick=()=>setup(b.dataset.exam));
+}
+function setup(id){const e=dataFor(id);if(!e)return;top();screen.innerHTML=`<div class="setup-wrap"><button class="back" id="back-home">← Vissza a tesztekhez</button><div class="panel"><div class="eyebrow">VIZSGASOR ELŐKÉSZÍTÉSE</div><h1>${e.year} · ${e.season} vizsga</h1><p class="setup-lead">Add meg a neved az eredménylaphoz, és olvasd el a szabályokat, mielőtt elindítod a tesztet.</p><label class="field-label" for="student-name">Tanuló neve</label><input class="field" id="student-name" maxlength="80" autocomplete="name" placeholder="Vezetéknév Keresztnév" required /><div class="steps"><div class="step"><strong>20 kérdés · 40 pont</strong>Egyszeres és többszörös választás, esetenként párosítás</div><div class="step"><strong>45 perc</strong>Az idő a kezdéstől folyamatosan telik</div><div class="step"><strong>40% = megfelelt</strong>Legalább 16 pont a sikeres gyakorláshoz</div><div class="step"><strong>Keverés + átlépés</strong>Nincs visszalépés; az átlépett kérdések a legvégén jönnek</div></div><div class="alert">A teszt elindítása után a visszalépés és a kérdések közötti szabad navigáció nem érhető el. Oldalfrissítéskor az aktuális próbálkozás megszakad. Kizárólag a teszt végén jelennek meg a helyes válaszok.</div><button class="btn btn-primary" id="start" style="width:100%">Teszt indítása →</button><p class="subtle">A nevedet és válaszaidat nem küldjük szerverre. A PDF a saját eszközödön készül.</p></div></div>`;
+ $('#back-home').onclick=home;$('#start').onclick=()=>{const name=$('#student-name').value.trim();if(name.length<2){toast('Írd be a neved (legalább 2 karakter)!');$('#student-name').focus();return;}start(e,name)};
+}
+function start(exam,name){const items=rand(exam.questions.map(q=>({...q,optionOrder:q.options?rand(q.options.map((_,i)=>i)):[],pairOrder:q.pairs?rand(q.pairs.map((_,i)=>i)):[],itemOrder:q.items?rand(q.items.map((_,i)=>i)):[]})));
+ session={exam,name,items,queue:[...items],deferred:[],answers:{},current:null,phase:'first',started:Date.now(),deadline:Date.now()+exam.minutes*60000,leaves:0,finished:false};lastResults=null;document.body.classList.add('in-exam');next();clockHandle=setInterval(updateClock,250);updateClock();}
+function updateClock(){if(!session||session.finished)return;const rest=session.deadline-Date.now();const c=$('#clock');if(c){c.textContent=timeFmt(rest);c.classList.toggle('danger',rest<300000)}if(rest<=0){toast('Lejárt a 45 perc. Automatikus kiértékelés.');finish(true)}}
+function next(){if(!session||session.finished)return;
+ if(!session.queue.length && session.phase==='first'){session.phase='deferred';session.queue=[...session.deferred];session.deferred=[]}
+ if(!session.queue.length){finish(false);return}
+ session.current=session.queue.shift();renderQuestion();updateClock();top();}
+function currentSelection(){const q=session.current;if(!q)return null;
+ if(q.type==='choice')return [...screen.querySelectorAll('[name="answer"]:checked')].map(x=>Number(x.value));
+ if(q.type==='textmulti')return [...screen.querySelectorAll('[data-text-answer]')].map(x=>x.value.trim());
+ if(q.type==='match')return [...screen.querySelectorAll('[data-match-index]')].map(x=>x.value===''?null:Number(x.value));
+ if(q.type==='order'){const a=Array(q.items.length).fill(null);screen.querySelectorAll('[data-order-index]').forEach(x=>a[Number(x.dataset.orderIndex)]=x.value===''?null:Number(x.value));return a;}
+ return null;
+}
+function displayChoiceHint(q){return q.autoCredit?'A feladat szövege pontatlan, ezért minden kitöltő megkapja a 2 pontot.':q.acceptedSingles?'Egy választ jelölj. Több szakmailag elfogadható megoldás is lehet.':q.correct.length===1?'Egy helyes választ jelölj.':`${q.correct.length} helyes választ jelölj.`}
+function renderQuestion(){const s=session,q=s.current,done=Object.keys(s.answers).length,number=done+1;
+ let input='';if(q.type==='choice'){
+  const multi=q.correct.length>1&&!q.acceptedSingles&&!q.autoCredit;input=`<p class="choice-help">${displayChoiceHint(q)}</p><div class="options">${q.optionOrder.map((i,j)=>`<label class="option"><input type="${multi?'checkbox':'radio'}" name="answer" value="${i}" ${multi?'':'required'}/><span class="opttext">${multiline(q.options[i])}</span></label>`).join('')}</div>`;
+ }else if(q.type==='textmulti'){input=`<p class="choice-help">${q.answers.length} rövid válasz. Az ékezeteket és az értékeket pontosan add meg!</p><div class="textfields">${q.answers.map((a,i)=>`<label><span class="field-label">${i+1}. hiányzó kifejezés</span><input class="field" data-text-answer maxlength="160" autocomplete="off" placeholder="Írd be a választ" /></label>`).join('')}</div>`;
+ }else if(q.type==='match'){input=`<p class="choice-help">Minden fogalomhoz válaszd ki a megfelelő meghatározást. A meghatározások sorrendje változik.</p><div class="matching-grid">${q.pairs.map(([k,v],i)=>`<div class="match-row"><strong>${esc(k)}</strong><select data-match-index="${i}"><option value="">Válassz meghatározást…</option>${q.pairOrder.map(j=>`<option value="${j}">${esc(q.pairs[j][1])}</option>`).join('')}</select></div>`).join('')}</div>`;
+ }else if(q.type==='order'){input=`<p class="choice-help">Rendelj 1–${q.items.length} sorszámot a lépésekhez.</p><div class="matching-grid">${q.itemOrder.map(i=>`<div class="order-row"><select aria-label="Sorszám" data-order-index="${i}"><option value="">–</option>${q.items.map((_,j)=>`<option value="${j+1}">${j+1}.</option>`).join('')}</select><span>${esc(q.items[i])}</span></div>`).join('')}</div>`;}
+ screen.innerHTML=`<div class="exam-shell"><div class="exam-toolbar"><div><div class="toolbar-title">${s.exam.year} · ${s.exam.season} teszt</div><div class="toolbar-sub">${esc(s.name)} · ${s.phase==='deferred'?'Kihagyott feladatok':'Első kör'}</div></div><div id="clock" class="clock" role="timer" aria-label="Hátralévő idő">45:00</div></div><div class="progress"><span style="width:${done/20*100}%"></span></div><div class="question-card"><div class="q-caption"><span>${number}. / 20 kérdés <span class="muted">· Eredeti ${q.number}. feladat</span></span><span class="phase">${s.phase==='deferred'?'↻ Visszatérő kérdés':'+2 pont'}</span></div><h1 class="question-title">${esc(q.question)}</h1>${q.image?`<img class="question-img" src="${esc(q.image)}" alt="Feladathoz tartozó adatbázis-ábra"/>`:''}${input}<div class="q-actions"><div class="q-actions-right"><button class="btn btn-outline" id="skip">${s.phase==='first'?'Kihagyom, később':'Üresen hagyom'}</button><button class="btn btn-primary" id="submit-answer">Válasz rögzítése →</button></div></div></div><div class="exam-small">A rögzített válasz nem módosítható. ${s.phase==='first'?`A kihagyott kérdések száma: ${s.deferred.length}.`:'Ez a kihagyott kérdések utolsó köre.'}</div></div>`;
+ screen.querySelectorAll('.option').forEach(el=>el.addEventListener('change',()=>{screen.querySelectorAll('.option').forEach(v=>v.classList.toggle('selected',!!$('input',v).checked));if(q.correct.length>1&&!q.acceptedSingles){const checked=screen.querySelectorAll('[name="answer"]:checked');if(checked.length>q.correct.length){el.querySelector('input').checked=false;el.classList.remove('selected');toast(`Legfeljebb ${q.correct.length} válasz jelölhető.`)}}}));
+ $('#skip').onclick=()=>{if(s.phase==='first')s.deferred.push(q);else s.answers[q.id]={value:null,skipped:true};next()};
+ $('#submit-answer').onclick=()=>{const value=currentSelection();const chosen=q.type==='choice'?value.length:q.type==='textmulti'?value.some(Boolean):Array.isArray(value)?value.some(x=>x!==null):false;if(!chosen){toast('Válassz egy választ, vagy használd a Kihagyom lehetőséget.');return;}if(q.type==='choice'&&q.correct.length>1&&!q.acceptedSingles&&value.length!==q.correct.length){toast(`Pontosan ${q.correct.length} választ jelölj, vagy hagyd ki a kérdést!`);return;}s.answers[q.id]={value,skipped:false};next()};
+}
+function normalizeText(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,' ').trim()}
+function grade(q,a){const value=a?.value??null;
+ if(q.autoCredit)return {pts:2,isCorrect:true,summary:'A kérdés megfogalmazása pontatlan; automatikus 2 pont.'};
+ if(q.type==='choice'){
+  const sel=Array.isArray(value)?value:[],right=q.correct;
+  if(q.acceptedSingles&&sel.length===1&&q.acceptedSingles.includes(sel[0]))return {pts:2,isCorrect:true};
+  const rightChosen=sel.filter(x=>right.includes(x)).length,wrongChosen=sel.length-rightChosen;
+  if(wrongChosen)return {pts:0,isCorrect:false};
+  if(sel.length===right.length&&rightChosen===right.length)return {pts:2,isCorrect:true};
+  if(right.length===2&&rightChosen===1&&sel.length===1)return {pts:1,isCorrect:false};
+  return {pts:0,isCorrect:false};
+ }
+ if(q.type==='textmulti'){const v=Array.isArray(value)?value:[],correct=(q.answers||[]).every((a,i)=>normalizeText(a)===normalizeText(v[i]));return {pts:correct?2:0,isCorrect:correct}}
+ if(q.type==='match'){const v=Array.isArray(value)?value:[],correct=q.pairs.every((p,i)=>v[i]===i);return {pts:correct?2:0,isCorrect:correct}}
+ if(q.type==='order'){const v=Array.isArray(value)?value:[],correct=q.order.every((idx,pos)=>v[idx]===pos+1);return {pts:correct?2:0,isCorrect:correct}}
+ return {pts:0,isCorrect:false};
+}
+function finish(timeout){if(!session||session.finished)return;stopClock();session.finished=true;document.body.classList.remove('in-exam');const s=session;const review=s.items.map(q=>({...q,answer:s.answers[q.id]||null,...grade(q,s.answers[q.id])}));const points=review.reduce((sum,r)=>sum+r.pts,0);lastResults={name:s.name,exam:s.exam,review,points,percent:points/40*100,passed:points>=16,started:s.started,ended:Date.now(),leaves:s.leaves,timeout};renderResult();}
+function answerLabel(q,value){if(!value||!Array.isArray(value)||value.length===0)return 'Nem válaszolt';
+ if(q.type==='choice')return value.map(i=>q.options[i]).join(' | ');
+ if(q.type==='textmulti')return value.map((v,i)=>`${i+1}. ${v||'—'}`).join(' · ');
+ if(q.type==='match')return q.pairs.map(([k],i)=>`${k}: ${value[i]==null?'—':q.pairs[value[i]]?.[1]||'—'}`).join(' | ');
+ if(q.type==='order')return q.items.map((t,i)=>`${value[i]??'–'}. ${t}`).join(' | ');
+ return '';
+}
+function correctLabel(q){if(q.autoCredit)return 'Nincs egyértelmű helyes megoldás; a feladatra 2 pont jár.';if(q.type==='choice')return (q.acceptedSingles||q.correct).map(i=>q.options[i]).join(' | ');if(q.type==='textmulti')return q.answers.join(' · ');if(q.type==='match')return q.pairs.map(([a,b])=>`${a}: ${b}`).join(' | ');if(q.type==='order')return q.order.map((i,j)=>`${j+1}. ${q.items[i]}`).join(' | ');return ''}
+function reviewHTML(r){return `<article class="review ${r.pts===2?'good':r.pts===1?'partial':'bad'}"><div class="review-head"><span>Eredeti ${r.number}. kérdés · ${r.pts===2?'Helyes':r.pts===1?'Részben helyes':'Hibás / kihagyott'}</span><span>${r.pts} / 2 pont</span></div><h3>${esc(r.question.split('\n')[0].slice(0,270))}</h3><div class="review-answer"><b>Saját válasz:</b> ${esc(answerLabel(r,r.answer?.value))}</div><div class="review-answer"><b>Helyes megoldás:</b> ${esc(correctLabel(r))}</div>${r.note?`<div class="review-note">ⓘ ${esc(r.note)}</div>`:''}</article>`}
+function renderResult(){if(!lastResults)return;const r=lastResults;top();const ok=r.review.filter(x=>x.pts===2).length;screen.innerHTML=`<div class="results-wrap"><div class="result-hero"><div class="result-overline">KIÉRTÉKELÉS · ${r.exam.year} ${r.exam.season.toLowerCase()} teszt</div><h1>${esc(r.name)} · ${r.passed?'<span class="pass-pill">MEGFELELT</span>':'<span class="pass-pill fail-pill">NEM FELELT MEG</span>'}</h1><div class="result-metrics"><div class="metric"><b>${r.points}/40</b><span>Elért pontszám</span></div><div class="metric"><b>${r.percent.toFixed(1).replace('.',',')}%</b><span>Teljesítmény</span></div><div class="metric"><b>${ok}/20</b><span>Teljesen helyes feladat</span></div><div class="metric"><b>${timeFmt(r.ended-r.started)}</b><span>Eltelt idő</span></div></div></div><div class="result-actions"><button class="btn btn-primary" id="pdf-btn">↓ Eredmény mentése PDF-ben</button><button class="btn btn-outline" id="retry">↻ Teszt újraindítása</button><button class="btn btn-ghost" id="results-home">Összes teszt</button></div><p class="subtle">${r.timeout?'A tesztet az idő lejárta automatikusan lezárta. ':'A teszt befejeződött. '}Oldalelhagyási figyelmeztetések: ${r.leaves}. Küszöb: 16/40 pont (40%). A feladatokat a forrás szerinti sorszámmal mutatjuk.</p><h2 class="review-title">Részletes feladatellenőrzés</h2><div class="review-list">${[...r.review].sort((a,b)=>a.number-b.number).map(reviewHTML).join('')}</div><div class="result-actions"><button class="btn btn-primary" id="bottom-pdf">↓ PDF mentése</button><button class="btn btn-outline" id="bottom-retry">↻ Újrapróbálom</button></div></div>`;
+ $('#retry').onclick=$('#bottom-retry').onclick=()=>setup(r.exam.id);$('#results-home').onclick=home;$('#pdf-btn').onclick=$('#bottom-pdf').onclick=downloadPDF;
+}
+function reportDoc(r){const rows=[...r.review].sort((a,b)=>a.number-b.number).map(x=>`<div class="item"><strong>${x.number}. ${esc(x.question.split('\n')[0])} — ${x.pts}/2 pont</strong><div>Saját válasz: ${esc(answerLabel(x,x.answer?.value))}</div><div>Helyes: ${esc(correctLabel(x))}</div>${x.note?`<small>Megjegyzés: ${esc(x.note)}</small>`:''}</div>`).join('');
+ return `<div id="pdf-report" style="font-family:Arial,sans-serif;width:745px;color:#20304d;background:white;padding:30px;font-size:12px;line-height:1.45;"><div style="border-bottom:3px solid #294795;padding-bottom:15px;margin-bottom:16px"><div style="font-size:14px;color:#5169ad;font-weight:bold">INF / GYAKORLÓ — EREDMÉNYLAP</div><h1 style="font-size:23px;margin:8px 0">${r.exam.year}. ${r.exam.season.toLowerCase()} vizsgasor</h1><div><strong>Tanuló:</strong> ${esc(r.name)}</div><div><strong>Kezdés:</strong> ${stamp(r.started)} | <strong>Befejezés:</strong> ${stamp(r.ended)}</div></div><div style="background:#edf2ff;padding:14px;margin-bottom:16px;border-radius:8px"><b style="font-size:20px">${r.points}/40 pont · ${r.percent.toFixed(1).replace('.',',')}%</b><div style="font-size:16px;margin-top:4px"><strong>${r.passed?'MEGFELELT':'NEM FELELT MEG'}</strong> (megfelelési küszöb: 40%)</div><div>Eltelt idő: ${timeFmt(r.ended-r.started)} · Oldalelhagyások: ${r.leaves}${r.timeout?' · Időkorlát lejárt':''}</div></div><h2 style="font-size:16px">Feladatonkénti értékelés</h2>${rows}<p style="color:#75839a;padding-top:14px">Gyakorló teszt, nem hivatalos vizsgaigazolás. A javított vagy vitatható forrásfeladatokat megjegyzés jelöli.</p></div>`;
+}
+async function downloadPDF(){const r=lastResults;if(!r)return;const filename=`INF_gyakorlo_${r.exam.id}_${slug(r.name)}_${new Date(r.ended).toISOString().slice(0,10)}.pdf`;
+ const holder=document.createElement('div');holder.style.cssText='position:fixed;left:-9999px;top:0;width:805px;z-index:-1;background:white;';holder.innerHTML=reportDoc(r);document.body.append(holder);
+ if(window.html2pdf){try{toast('Az eredménylap PDF-fájljának elkészítése…');await html2pdf().set({margin:[8,8,8,8],filename,image:{type:'jpeg',quality:.97},html2canvas:{scale:1.5,scrollY:0},jsPDF:{unit:'mm',format:'a4',orientation:'portrait'},pagebreak:{mode:['css','legacy']}}).from($('#pdf-report',holder)).save();holder.remove();return}catch(e){console.warn(e)}}
+ holder.remove();const w=window.open('','_blank');if(!w){toast('Engedélyezd a felugró ablakot, vagy próbáld újra!');return}w.document.write(`<!doctype html><html lang="hu"><head><meta charset="utf-8"><title>${esc(filename)}</title><style>@page{size:A4;margin:10mm}body{font-family:Arial,sans-serif}.item{padding:7px 0;border-bottom:1px solid #e5e7eb;page-break-inside:avoid}</style></head><body>${reportDoc(r)}<script>window.onload=function(){window.print();}</`+'script></body></html>');w.document.close();toast('A nyomtatási ablakban válaszd a „Mentés PDF-ként” lehetőséget.');}
+window.addEventListener('beforeunload',ev=>{if(session&&!session.finished){ev.preventDefault();ev.returnValue=''}});
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&session&&!session.finished){session.leaves++;}else if(!document.hidden&&session&&!session.finished){toast('A teszt közben másik lapra léptél. A rendszer rögzítette a megszakítást.');updateClock()}});
+$('#home-link').addEventListener('click',e=>{e.preventDefault();if(session&&!session.finished&&!confirm('Biztosan megszakítod a tesztet? Az aktuális eredmény elveszik.'))return;home()});
+if(EXAMS.length){home()}else{screen.innerHTML='<div class="alert">Nem találhatók a tesztadatok. Ellenőrizd, hogy a data.js fájl az index.html mellett található-e.</div>'}
+
+})();
+
+  </script>
 </body>
 </html>
