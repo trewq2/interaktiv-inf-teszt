@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b1a36" />
+  <meta name="description" content="Informatikai rendszer- és alkalmazás-üzemeltető technikus – interaktív vizsgafelkészítő, 2022–2026" />
+  <title>INF vizsgafelkészítő · Interaktív tesztek</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" async></script>
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#" id="home-link" aria-label="Vissza a tesztekhez"><span class="brand-icon">&lt;/&gt;</span><span>INF<span class="brand-soft">/</span>GYAKORLÓ <small>Interaktív szakmai vizsga</small></span></a>
+        <div class="topbar-meta"><span class="status-dot"></span> Informatikai rendszer- és alkalmazás-üzemeltető technikus</div>
+      </div>
+    </header>
+    <main id="screen" class="container"></main>
+    <footer class="foot container"><span>Vizsgafelkészítő · 2022–2026</span><span>A gyakorlás helyben történik, az eredményeket az oldal nem küldi szerverre.</span></footer>
+  </div>
+  <div class="toasts" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

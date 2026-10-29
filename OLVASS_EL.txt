@@ -1,0 +1,74 @@
+INF / GYAKORLÓ – INFORMATIKAI RENDSZER- ÉS ALKALMAZÁS-ÜZEMELTETŐ TECHNIKUS
+===========================================================================
+
+TARTALOM
+  2022 tavasz, 2023 tavasz és ősz, 2024 ősz,
+  2025 tavasz és ősz, 2026 tavasz.
+  7 vizsgasor × 20 feladat = 140 kérdés.
+
+INDÍTÁS SAJÁT GÉPEN
+  1. Csomagold ki a ZIP-fájlt egy mappába.
+  2. Nyisd meg az index.html fájlt Chrome, Edge vagy Firefox böngészőben.
+  3. Írd be a tanuló nevét, válassz tesztet, indítsd el.
+  4. Eredmény után válaszd a PDF mentése gombot.
+
+GITHUB PAGES TELEPÍTÉS
+  1. Hozz létre GitHub repositoryt (pl. inf-vizsgagyakorlo).
+  2. A kicsomagolt mappa TARTALMÁT töltsd fel a main ágba,
+     úgy, hogy az index.html a repository gyökerében legyen.
+  3. Settings → Pages → Build and deployment → Deploy from a branch.
+  4. Branch: main, mappa: /(root), Save.
+  5. Az oldal elérhető lesz a Pages által adott címen.
+     Az aktiválás és közzététel eltarthat néhány percig.
+
+MŰKÖDÉS
+  * Időkeret: 45 perc, automatikus lezárás az idő lejártakor.
+  * Minden kérdés maximum 2 pont, összesen 40 pont.
+  * Megfelelt: legalább 16/40 pont (40%).
+  * A kérdések és válaszlehetőségek külön-külön keverednek.
+  * Egy kérdést megválaszolva nincs visszalépés.
+  * Kihagyott kérdések: csak az eredeti első kör után jelennek meg.
+  * Két helyes választ kérő feladatnál egy helyes válasz, hibás
+    jelölés nélkül 1 pontot ér az eredeti 2022-es javítási elv szerint.
+  * Három vagy több helyes választ kérő feladatnál a teljes egyezés
+    adja a 2 pontot.
+  * Pár és sorrendi feladatoknál a teljesen helyes megoldás 2 pont.
+  * A hibák és a helyes válaszok csak a végső értékelésben láthatók.
+  * Eredmények PDF-be menthetők, a teszt újraindítható.
+
+PDF-MENTÉS
+  A rendszer az online elérhető html2pdf könyvtárral PDF-fájlt
+  ment a tanuló saját gépére. Ha a külső könyvtár nem tölthető be
+  (például hálózati korlátozás miatt), az oldal a böngésző
+  nyomtatási ablakát nyitja meg. Ott válaszd a „Mentés PDF-ként”
+  célt. A böngészőben engedélyezni kell a felugró ablakot.
+
+FONTSOS TANÁRI MEGJEGYZÉSEK
+  * A 2022-es dokumentum szkennelt javítókulcs, ezért egyes
+    hosszú feladatszövegek az értelmet megőrizve rövidítve szerepelnek.
+  * A 2023-as és 2025-ös dokumentumok között hibásan megfogalmazott
+    vagy több elfogadható megoldással rendelkező feladatok is vannak.
+    Ezekhez az oldalon megjegyzés és szükség szerint korrigált
+    javítókulcs tartozik. A 2025. őszi JSON-feladat a hibás
+    megfogalmazás miatt automatikusan két pontot ad.
+  * A 2025. őszi Wi-Fi frekvenciás feladatnál három helyes válasz van:
+    2,4 GHz / 5 GHz / 6 GHz, az eredeti szöveggel ellentétben.
+  * A kérdésekhez tartozó kulcs a data.js állományban van.
+    GitHub Pages statikus tárhelyen a javítókulcs technikailag
+    megtekinthető a böngésző fejlesztői eszközeivel. Ez gyakorló
+    oldal, NEM biztonságos, felügyelt vizsgáztatási rendszer.
+  * A tanuló neve, válaszai és eredményei nem kerülnek szerverre.
+    Az eredmény csak az aktuális böngészőmunkamenetben látható;
+    ezért fontos letölteni az eredménylapot a teszt végén.
+  * Az oldal megjegyzi, hányszor került a böngésző másik fülre,
+    de nem tudja megkülönböztetni a technikai megszakítást a csalástól.
+
+FÁJLOK
+  index.html     – kezdőlap
+  style.css      – kinézet és mobilnézet
+  app.js         – vizsgamotor, pontozás, eredménylap
+  data.js        – 7 teszt adatállománya, böngészőből közvetlen megnyitáshoz
+  data.json      – ugyanaz az adat szerkeszthető JSON formában
+  assets/        – a dokumentumokból átvett ábra
+
+© Oktatási célú gyakorló változat. Nem hivatalos vizsgafelület.
