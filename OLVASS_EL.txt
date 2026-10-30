@@ -1,30 +1,8 @@
-INF / GYAKORLÓ – JAVÍTOTT, EGYFÁJLOS VÁLTOZAT
-=================================================
+INF / GYAKORLÓ – OSZTV-stílusú állapotkövető, 2026.10.30.
 
-EZT A VÁLTOZATOT TÖLTSD FEL A GITHUBRA:
+1. A repository főkönyvtárában lévő régi index.html fájlt cseréld erre.
+2. GitHubon Commit changes.
+3. A közzétett oldalt Ctrl+F5-tel frissítsd.
 
-1. A GitHubon nyisd meg a trewq2/interaktiv-inf-teszt repositoryt.
-2. A main ág gyökerében keresd meg az index.html állományt.
-3. Kattints a fájlra, majd a szerkesztés ikonjára (ceruza),
-   vagy válaszd az Add file / Upload files menüt, hogy lecseréld.
-4. A ZIP-ben található index.html legyen a repository gyökerében,
-   és a módosítást commitold a main ágra.
-5. Az oldal: https://trewq2.github.io/interaktiv-inf-teszt/
-   Kényszerített frissítés Windows alatt: Ctrl+F5.
-
-A fájl minden szükséges kérdést, megoldást, formázást, tesztlogikát és
-ábrát tartalmaz. Nem kell külön app.js, data.js, style.css vagy assets mappa.
-Ha a régi fájlok a repositoryban megmaradnak, az új index.html nem hivatkozik rájuk;
-ezért nem akadályozzák az új változat működését.
-
-7 vizsgasor, 140 kérdés, 45 perc, 40 pont, 40%-tól megfelelt.
-A kérdés- és válaszsorrend keverése, a kihagyott kérdések utólagos felkínálása,
-a lezárás utáni kiértékelés és az újraindítás elérhető.
-
-PDF: internet esetén a html2pdf könyvtár közvetlenül menti az eredménylapot;
-ha nem töltődik be, az oldal felkínálja a böngésző nyomtatását,
-amelyen a „Mentés PDF-ként” választandó. Felugróablak engedélyezése szükséges.
-
-Megjegyzés: GitHub Pages statikus oldal, így a megoldások a forráskódban
-technikai ismeretekkel elérhetők. A feladat ezért gyakorlásra, nem védett
-éles vizsgáztatásra alkalmas. A beírt név nem kerül szerverre.
+Újdonságok: két élő előrehaladási sáv (első kör és véglegesítés); 20 kérdés állapotjelző rácsa; megválaszolt, kihagyott, hátralévő számlálók; visszatérő kérdések külön jelzése.
+A kérdések közötti visszalépés továbbra sem lehetséges.
